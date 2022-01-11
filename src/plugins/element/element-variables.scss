@@ -1,0 +1,231 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import '~element-ui/packages/theme-chalk/src/index';
+
+.el-menu.el-menu--horizontal {
+  border-bottom: none !important;
+}
+
+.el-menu-item {
+  font-size: 15px;
+  font-family: Nunito;
+}
+
+.el-menu--horizontal>.el-menu-item {
+  color: #696b6d;
+}
+
+.el-submenu__title {
+  font-size: 15px;
+  color: #696b6d;
+}
+
+.el-main {
+  padding: 0px;
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  outline: 0;
+  color: #303133;
+  background-color: rgb(235, 232, 250)
+}
+
+.el-button--primary {
+  color: #FFF;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+  background: #8069f1;
+  border-color: #8069f1;
+  color: #FFF;
+}
+
+.el-button--danger.is-plain {
+  color: var(--sec_red);
+  background: #ffffff;
+  border-color: #e45858;
+  border: 2px solid #e45858;
+}
+
+.el-button--danger.is-plain:focus,
+.el-button--danger.is-plain:hover {
+  background: #e45858;
+  border-color: #e45858;
+  color: #FFF;
+}
+
+.el-button {
+  font-family: Nunito;
+}
+
+.el-button--primary.is-plain {
+  color: #FFF;
+  background: #8976f5;
+  border-color: #8069f1;
+}
+
+.el-button--primary.is-plain:focus,
+.el-button--primary.is-plain:hover {
+  background: #8069f1;
+  border-color: #8069f1;
+  color: #FFF;
+}
+
+.el-input.footer_input {
+  font-size: 17px;
+  width: 70%;
+}
+
+.el-input__inner {
+  font-family: Nunito;
+  height: 50px;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border-color: #8069f1;
+  outline: 0;
+}
+
+.el-select .el-input__inner:focus {
+  border-color: #8069f1;
+}
+
+.el-collapse-item__header {
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.el-collapse-item__wrap {
+  background-color: transparent;
+}
+
+.el-collapse-item {
+  margin-bottom: 15px;
+  border: 1px solid grey;
+  padding-left: 10px;
+}
+
+.el-collapse-item__arrow {
+  margin: 0 8 px 0 auto;
+  transition: transform .3s;
+  font-weight: 900;
+  color: #8069f1;
+}
+
+.el-avatar {
+  background: #f8f8f8;
+}
+
+.el-popover {
+  background: #fff;
+}
+
+.el-step__icon {
+  background: #F5F8FE;
+  color: #8069f1;
+}
+
+.el-step__title.is-finish {
+  color: #8069f1;
+}
+
+.el-step__description.is-finish {
+  color: #8069f1;
+}
+
+.el-select-dropdown__item.selected {
+  color: #8069f1;
+  font-weight: 700;
+}
+
+.el-radio__label {
+  font-size: 15px;
+}
+
+.el-form-item__label {
+  font-size: 17px !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: #8069f1;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #8069f1;
+  background: #8069f1;
+}
+
+.el-form-item__label {
+  font-size: 15px;
+}
+
+.el-step__head.is-finish {
+  color: #8069f1;
+  border-color: #8069f1;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+  color: #6246ea;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+  color: #6246ea;
+}
+
+.el-alert .el-alert__description {
+  font-size: 15px;
+}
+.pay_notice.el-alert--error.is-light {
+  background-color: #f16565;
+  color: #ffffff;
+}
+.pay_notice.el-alert--error.is-light .el-alert__description {
+  color: #ffffff;
+}
+.pay_notice.el-alert .el-alert__description {
+  font-size: 20px;
+  line-height: 29px;
+}
+.pay_notice.el-alert .el-alert__title {
+  font-size: 16px;
+}
+.el-alert__title {
+  font-size: 14px;
+}
+
+.el-alert--info.is-light .el-alert__description {
+  color: #e8ebf8;
+}
+
+.el-alert--info.is-light {
+  background-color: #8a60c2;
+  color: #e8ebf8;
+}
+
+.el-carousel__item {
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+
+// .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
+//   border-bottom: 2px solid #6246e9;
+// }
