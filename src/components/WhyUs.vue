@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <el-row :gutter="20">
-      <el-col :xs="24" :sm="24" :md="12">
+      <el-col :xs="24" :sm="24" :md="11">
         <div class="py-70 whyUs_">
           <h2>
             Step into a role. Work with a group with your own
@@ -16,9 +16,9 @@
         </div>
       </el-col>
 
-      <el-col :xs="24" :sm="24" :md="12">
-        <div class="bg_sec py-60 px-20">
-          <div class="d-flex justify-between">
+      <el-col :xs="24" :sm="24" :md="13">
+        <div class="bg_sec py-40 px-20">
+          <div class="why_us_div">
             <div class="whyUs_item">
               <span class="material-icons-outlined"> groups </span>
               <h3>Real Team Work</h3>
@@ -38,9 +38,7 @@
                 professionals.
               </p>
             </div>
-          </div>
 
-          <div class="mt-40 d-flex justify-between">
             <div class="whyUs_item">
               <span class="material-icons-outlined"> laptop_chromebook </span>
               <h3>Real Projects</h3>
@@ -61,6 +59,8 @@
               </p>
             </div>
           </div>
+
+          <div class="mt-40 d-flex justify-between"></div>
         </div>
       </el-col>
     </el-row>
@@ -80,22 +80,29 @@ export default {
     color: #63448b;
   }
 }
-.whyUs_item {
-  width: 46%;
-  // text-align: center;
+.why_us_div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  .material-icons-outlined {
-    font-size: 50px;
-    color: #756985;
-  }
+  .whyUs_item {
+    margin-top: 20px;
+    width: 48%;
+    // text-align: center;
 
-  h3 {
-    color: rgb(92, 91, 91);
-    font-family: PoppinsMedium;
-  }
-  p {
-    color: rgba(34, 34, 34, 0.56);
-    font-size: 0.8rem;
+    .material-icons-outlined {
+      font-size: 50px;
+      color: #756985;
+    }
+
+    h3 {
+      color: rgb(92, 91, 91);
+      font-family: PoppinsMedium;
+    }
+    p {
+      color: rgba(34, 34, 34, 0.56);
+      font-size: 1rem;
+    }
   }
 }
 </style>

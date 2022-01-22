@@ -12,6 +12,7 @@ import router from './router';
 import 'material-icons/iconfont/material-icons.css';
 
 import '@/assets/css/main.css';
+import '@/assets/css/display.css';
 import '@/plugins/element/index.js';
 
 Vue.mixin(mixin);

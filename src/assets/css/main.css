@@ -96,6 +96,10 @@ a {
 }
 
 /*  padding rules */
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .py-70 {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -198,9 +202,6 @@ a {
 }
 .bg_light {
   background: #ececfb;
-}
-.bg_courses {
-  /* background-image: url("data:image/svg+xml;utf8,"); */
 }
 .curr_bg {
   background-image: url('../images/Blue.png');
