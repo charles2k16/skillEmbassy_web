@@ -6,10 +6,9 @@
           <h2 class="mt-20">Collaborate with us</h2>
 
           <p class="text_highlight mt-20">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque,
-            aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
-            sollicitudin laoreet viverra.
+            We have the ability to shape the next generation of innovators and
+            thinkers. Let us collaborate to create, impact, and develop the next
+            generation of engineers, managers and designers.
           </p>
 
           <el-button type="danger" class="mt-40" icon="el-icon-phone"

@@ -33,6 +33,34 @@
               description="Registration fee for application"
             ></el-step>
           </el-steps>
+          <br /><br />
+
+          <div class="select_course_div" v-if="activeStep == null">
+            <h3>Select a Course you want to Apply for</h3>
+            <div>
+              <el-radio-group v-model="activeCourse" @change="changeCourse">
+                <el-radio label="software_dev" border class="mt-20"
+                  >Software Development</el-radio
+                >
+                <br />
+                <el-radio label="product_management" border class="mt-20"
+                  >Product Management</el-radio
+                >
+                <br />
+                <el-radio label="product_design" border class="mt-20"
+                  >Product Design</el-radio
+                >
+                <br />
+                <el-radio label="data_science" border class="block mt-20"
+                  >Data Science</el-radio
+                >
+                <br />
+                <el-radio label="dev_ops" border class="block mt-20"
+                  >Dev Ops</el-radio
+                >
+              </el-radio-group>
+            </div>
+          </div>
 
           <div class="applcn_form">
             <el-form
@@ -52,15 +80,6 @@
                 <el-col :xs="24" :sm="24" :md="8">
                   <el-form-item label="Last Name" prop="last_name">
                     <el-input v-model="application.last_name"></el-input>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="Number" prop="phone">
-                    <el-input
-                      v-model="application.phone"
-                      placeholder="+23354571511"
-                    ></el-input>
                   </el-form-item>
                 </el-col>
 
@@ -85,15 +104,16 @@
                   </el-form-item>
                 </el-col>
 
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="Region/State" prop="state">
-                    <el-input
-                      v-model="application.state"
-                      placeholder="Residence State/Region"
-                    ></el-input>
+                <el-col :xs="24" :sm="24" :md="6">
+                  <el-form-item label="Gender" prop="gender">
+                    <el-radio-group v-model="application.gender">
+                      <el-radio label="Male"></el-radio>
+                      <el-radio label="Female"></el-radio>
+                    </el-radio-group>
                   </el-form-item>
                 </el-col>
-                <el-col :xs="24" :sm="24" :md="10">
+
+                <el-col :xs="24" :sm="24" :md="24">
                   <el-form-item
                     label="What is your current experience level? *"
                     prop="experience"
@@ -120,24 +140,6 @@
                         label="Professional:Actively working and looking to upskill"
                       ></el-radio>
                     </el-radio-group>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="6">
-                  <el-form-item label="Gender" prop="gender">
-                    <el-radio-group v-model="application.gender">
-                      <el-radio label="Male"></el-radio>
-                      <el-radio label="Female"></el-radio>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="6">
-                  <el-form-item label="Timezone?" prop="time_zone">
-                    <el-input
-                      v-model="application.time_zone"
-                      placeholder="GMT+2"
-                    ></el-input>
                   </el-form-item>
                 </el-col>
               </el-row>
@@ -202,57 +204,6 @@
 
                 <el-col :xs="24" :sm="24" :md="12">
                   <el-form-item
-                    label="Explain in detail your favorite project, and how you've worked through it"
-                    prop="fav_project"
-                  >
-                    <el-input
-                      v-model="application.fav_project"
-                      type="textarea"
-                      :rows="4"
-                      placeholder="Details here"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
-                    label="Please tell us about any previous or current project experience?*"
-                    prop="project"
-                  >
-                    <el-input
-                      v-model="application.project"
-                      type="textarea"
-                      :rows="4"
-                      placeholder="Details here"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
-                    label="Personal website / portfolio *"
-                    prop="website"
-                  >
-                    <el-input
-                      v-model="application.website"
-                      placeholder="wwww.portfolio.com"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <!-- optional questions tailored -->
-                <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
-                    label="Do you have a reliable internet connection and a computer*"
-                    prop="experience"
-                  >
-                    <el-radio-group v-model="application.internet">
-                      <el-radio class="mt-10" label="Yes"></el-radio>
-                      <br />
-                      <el-radio class="mt-10" label="No"></el-radio>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
                     label="What is your preferred stack? (Software Devs Only)"
                     prop="stack"
                   >
@@ -307,33 +258,28 @@
                   : 'Proceed to Next Step'
               }}</el-button
             >
-            <flutterwave-pay-button
+
+            <!-- <el-button
               v-if="activeStep == 3"
-              :tx_ref="generateReference()"
-              :amount="3"
-              currency="GHS"
-              payment_options="card,mobilemoney"
-              redirect_url="http://localhost:8080"
+              type="primary"
+              @click="payViaService"
+              >Proceed to Payments</el-button
+            > -->
+
+            <paystack
+              v-if="activeStep == 3"
               class="payment_btn"
-              :meta="{
-                counsumer_id: '7898',
-                consumer_mac: 'kjs9s8ss7dd',
-              }"
-              :customer="{
-                name: `${application.first_name} ${application.last_name}`,
-                email: application.email,
-                phone_number: application.phone,
-              }"
-              :customizations="{
-                title: 'Course Registration',
-                description: 'Customization Description',
-                logo: 'https://flutterwave.com/images/logo-colored.svg',
-              }"
-              :callback="makePaymentCallback"
-              :onclose="closedPaymentModal"
+              :amount="amount * 100"
+              currency="GHS"
+              :channels="['card', 'mobile_money']"
+              :email="application.email"
+              paystackkey="pk_live_119e96978b7568febdfcaf3297808cac902dbf92"
+              :reference="reference"
+              :callback="processPayment"
+              :close="closedPaymentModal"
             >
               Proceed to Payments
-            </flutterwave-pay-button>
+            </paystack>
           </div>
         </div>
       </div>
@@ -345,14 +291,29 @@
 </template>
 
 <script>
+import paystack from 'vue-paystack';
 import Footer from '../components/Footer.vue';
+// import pay from '../api/pay';
+
 export default {
   name: 'Application',
   components: {
     Footer,
+    paystack,
+  },
+  computed: {
+    reference() {
+      let text = '';
+      let possible =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      for (let i = 0; i < 10; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+      return text;
+    },
   },
   data() {
     return {
+      amount: 2,
       activeCourse: '',
       activeStep: null,
       application: {
@@ -474,8 +435,10 @@ export default {
     };
   },
   created() {
-    console.log(this.$route.query);
-    this.activeCourse = this.$route.query;
+    this.activeCourse = this.$route.query.name;
+    console.log(this.activeCourse);
+
+    // pay.verifyDisableOTP();
   },
   methods: {
     nextStep() {
@@ -487,11 +450,17 @@ export default {
         this.activeStep = 3;
       }
     },
+    changeCourse(e) {
+      this.activeCourse = e;
+    },
+    processPayment: () => {
+      window.alert('Payment recieved');
+    },
     makePaymentCallback(response) {
-      console.log('Payment callback', response);
+      console.log('Pay', response);
     },
     closedPaymentModal() {
-      console.log('payment modal is closed');
+      console.log('payment is closed');
     },
     generateReference() {
       let date = new Date();

@@ -3,11 +3,11 @@
     <div class="course_page_header">
       <div class="section py-100">
         <el-row :gutter="50">
-          <el-col :xs="12" :sm="12" :md="10">
+          <el-col :xs="24" :sm="24" :md="10">
             <h3 class="white course_hd">
               Start Your Career As A DevOps Engineer
             </h3>
-            <p class="mt-40 text_highlight white">
+            <p class="mt-40 text_highlight">
               Learnn the step by step method of creating, deploying and
               automating infrastructures directly from the leaders who have been
               there and done that.
@@ -15,8 +15,14 @@
             <el-button type="primary" class="mt-20">Apply Now</el-button>
           </el-col>
 
-          <el-col :xs="12" :sm="12" :md="14">
-            <div class="d-flex-align-center justify-right"></div>
+          <el-col :xs="24" :sm="24" :md="14">
+            <div class="d-flex-align-center">
+              <img
+                src="../../assets/images/gifs/devops.gif"
+                alt="gif"
+                class="course_head_img"
+              />
+            </div>
           </el-col>
         </el-row>
         <br />
@@ -79,11 +85,13 @@
     <div class="bg_white py-100">
       <div class="section">
         <el-row :gutter="20">
-          <el-col :xs="24" :sm="24" :md="2"> .</el-col>
+          <el-col :xs="24" :sm="24" :md="2" class="hidden-sm-and-down">
+            .</el-col
+          >
           <el-col :xs="24" :sm="24" :md="10">
             <div>
               <img
-                src="../../assets/images/gifs/devops.gif"
+                src="../../assets/images/live-classes.png"
                 alt="gif"
                 width="100%"
               />

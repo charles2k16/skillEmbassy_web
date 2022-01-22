@@ -11,8 +11,9 @@
               from Renowed Industries
             </h3>
             <p class="mt-20 text_highlight white">
-              There are many text variations of passages of Lorem Ipsum
-              available, but the majority have suffered.
+              Our dedicated projects and discipline mentors will make sure
+              you're on track. Along with check-ins, workshops, office hours and
+              more.
             </p>
 
             <el-button type="danger" class="mt-40" icon="el-icon-user">

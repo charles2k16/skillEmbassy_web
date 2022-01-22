@@ -5,7 +5,7 @@
         <el-row :gutter="50">
           <el-col :xs="12" :sm="12" :md="12">
             <h3 class="white course_hd">Digital Product Management</h3>
-            <p class="mt-40 text_highlight white">
+            <p class="mt-40 text_highlight">
               Learn the step by step method of creating managingand growing
               successful products, directly from the leaders who have been there
               and done that.
@@ -16,7 +16,13 @@
           </el-col>
 
           <el-col :xs="12" :sm="12" :md="12">
-            <div class="d-flex-align-center justify-right"></div>
+            <div class="d-flex-align-center justify-right">
+              <img
+                src="../../assets/images/gifs/produt-management.gif"
+                alt="gif"
+                width="100%"
+              />
+            </div>
           </el-col>
         </el-row>
       </div>
@@ -65,7 +71,7 @@
           <el-col :xs="24" :sm="24" :md="10">
             <div>
               <img
-                src="../../assets/images/gifs/produt-management.gif"
+                src="../../assets/images/live-classes.png"
                 alt="gif"
                 width="100%"
               />

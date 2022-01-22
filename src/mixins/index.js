@@ -9,11 +9,15 @@ export default {
       });
     },
     applyCourse(course) {
-      console.log(course);
-      this.$router.push({
-        name: 'application',
-        query: { name: course },
-      });
+      if (course)
+        this.$router.push({
+          name: 'application',
+          query: { name: course },
+        });
+      else
+        this.$router.push({
+          name: 'application',
+        });
     },
   },
 };

@@ -1,7 +1,7 @@
 <template>
-  <div class="section py-100">
+  <div class="section" style="margin-top: -200px">
     <div class="center">
-      <h2>Our Career Change Courses</h2>
+      <h2 class="course_hd">Our Career Change Courses</h2>
       <p class="mt-10 text_highlight">
         Practical courses 100% online with live classes, for you to learn the
         skills that the digital market is looking for.
@@ -34,7 +34,7 @@
 
           <el-button
             class="mt-20 full_width"
-            size="mini"
+            size="large"
             type="primary"
             plain
             @click="viewCourse(course.slug)"
@@ -44,17 +44,13 @@
       </div>
     </div>
 
-    <div class="mt-40">
+    <div class="mt-40 mb-40">
       <el-alert
         class="refund_policy"
         title="Refund Policy Info"
         type="info"
         show-icon
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, 
-        sequi illum sapiente explicabo delectus fugiat laudantium. 
-        In unde, repellendus repellat vel, repudiandae id quis consectetur minus, 
-        iste distinctio saepe aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing
-         elit. Aspernatur, sequi illum sapiente explicabo delectus fugiat laudantium."
+        description="Our students' confidence is extremely important to us at Skill Embassy. However, if you are dissatisfied with the learning program, we provide a 3-day money-back guarantee. Simply send us an email with a refund request within 3 days of your purchase, and we will reimburse you 100%, no questions asked!"
       >
       </el-alert>
     </div>
@@ -70,7 +66,7 @@ export default {
         {
           title: 'DevOps Engineer',
           slug: 'dev_ops',
-          desc: 'All Developers and Engineers are also expected to have solid DevOps knowledge and become full-stack',
+          desc: 'Reduce software development times to get ahead of the competition with DevOps.',
           topics: [
             'Terraform',
             'Kubernetes',
@@ -103,15 +99,13 @@ export default {
           slug: 'product_design',
           desc: 'The mission of UX Designers is to create, prototype, test and always improve the digital experience of users',
           topics: [
-            'FrontEnd',
-            'Backend Dev',
-            'FullStack Dev',
-            'Node.js',
-            'React',
-            'Python',
-            'Html & CSS',
-            'Javascript',
-            'Mongo DB',
+            'Design Principles',
+            'Research',
+            'Communication',
+            ' Brainstorming and Ideation',
+            'Prototyping',
+            'Collaboration',
+            'Design Technologies',
           ],
         },
         {
@@ -119,15 +113,12 @@ export default {
           slug: 'product_management',
           desc: ' Product Managers mission is to look at the market and understand what users wish',
           topics: [
-            'FrontEnd',
-            'Backend Dev',
-            'FullStack Dev',
-            'Node.js',
-            'React',
-            'Python',
-            'Html & CSS',
-            'Javascript',
-            'Mongo DB',
+            'Product Launch',
+            'Product Innovation',
+            'Customer Development',
+            'Product Roadmap',
+            'Product Strategy,',
+            'Product Tools',
           ],
         },
         {
@@ -154,6 +145,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.course_hd {
+  color: #63448b;
+  font-weight: bold;
+}
 .courses_carousel {
   // display: grid;
   // grid-row-gap: 25px;
@@ -175,7 +170,8 @@ export default {
   // }
 
   .course_div {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 350px;
     padding: 20px 15px 20px 15px;
     margin: 20px 20px;
@@ -185,11 +181,12 @@ export default {
     background: rgb(212, 224, 255);
     flex-direction: column;
     justify-content: space-between;
-    // transition: transform 0.2s;
+    transition: transform 0.2s;
 
-    // &:hover {
-    //   transform: scale(1.1);
-    // }
+    &:hover {
+      // transform: scale(1.1);
+      transform: translateY(-7px);
+    }
     .course_title {
       color: #63448b;
       // top: -2px;
@@ -223,7 +220,8 @@ export default {
   }
 }
 .refund_policy {
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   margin: 0 auto;
 }
 </style>

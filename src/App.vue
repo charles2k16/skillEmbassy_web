@@ -3,7 +3,7 @@
     <el-header>
       <div class="section">
         <el-row :gutter="10">
-          <el-col :xs="7" :sm="6" :md="6">
+          <el-col :xs="7" :sm="7" :md="6">
             <div
               class="logo_div d-flex-align-center"
               @click="$router.push('/')"
@@ -12,10 +12,22 @@
             </div>
           </el-col>
 
-          <el-col :xs="14" :sm="15" :md="13">
+          <el-col :xs="17" :sm="17" :md="13">
+            <el-dropdown class="hidden-md-and-up mobile_dropdown">
+              <span class="el-dropdown-link">
+                <i class="el-icon-menu"></i>
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>Action 1</el-dropdown-item>
+                <el-dropdown-item>Action 2</el-dropdown-item>
+                <el-dropdown-item>Action 3</el-dropdown-item>
+                <el-dropdown-item disabled>Action 4</el-dropdown-item>
+                <el-dropdown-item divided>Action 5</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
             <el-menu
               :default-active="activeIndex"
-              class="el-menu-demo"
+              class="el-menu-demo hidden-sm-and-down"
               mode="horizontal"
               router
             >
@@ -48,15 +60,12 @@
             </el-menu>
           </el-col>
 
-          <el-col :xs="3" :sm="3" :md="5">
+          <el-col :md="5" class="hidden-sm-and-down">
             <div
               class="d-flex justify-right d-flex-align-center"
               style="height: 60px"
             >
-              <el-button
-                size="small"
-                type="primary"
-                @click="applyCourse('software_dev')"
+              <el-button size="mini" type="primary" @click="applyCourse"
                 >Apply Now</el-button
               >
             </div>

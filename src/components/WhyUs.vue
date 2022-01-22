@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <el-row :gutter="20">
-      <el-col :xs="12" :sm="12" :md="12">
+      <el-col :xs="24" :sm="24" :md="12">
         <div class="py-70 whyUs_">
           <h2>
             Step into a role. Work with a group with your own
@@ -16,7 +16,7 @@
         </div>
       </el-col>
 
-      <el-col :xs="12" :sm="12" :md="12">
+      <el-col :xs="24" :sm="24" :md="12">
         <div class="bg_sec py-60 px-20">
           <div class="d-flex justify-between">
             <div class="whyUs_item">
@@ -70,13 +70,13 @@
 <script>
 export default {
   name: 'WhyUs',
-}
+};
 </script>
 
 <style lang="scss" scoped>
 .whyUs_ {
   h2 span {
-    font-size: 35px;
+    font-size: 2.5rem;
     color: #63448b;
   }
 }

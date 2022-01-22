@@ -3,7 +3,7 @@
     <div class="course_page_header">
       <div class="section py-100">
         <el-row :gutter="50">
-          <el-col :xs="12" :sm="12" :md="12">
+          <el-col :xs="24" :sm="24" :md="12">
             <h3 class="white course_hd">Digital Product Designer</h3>
             <p class="mt-40 text_highlight white">
               Learn the step by step method of creating managing and growing
@@ -15,7 +15,7 @@
             >
           </el-col>
 
-          <el-col :xs="12" :sm="12" :md="12">
+          <el-col :xs="24" :sm="24" :md="12">
             <div class="d-flex-align-center justify-right"></div>
           </el-col>
         </el-row>
@@ -26,7 +26,7 @@
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
@@ -35,7 +35,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
@@ -44,7 +44,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">"Senior" Freshers</div>
               <p class="px-0 mt-10">

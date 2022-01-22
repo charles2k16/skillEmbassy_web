@@ -226,6 +226,10 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
   justify-content: center;
 }
 
+.el-radio.is-bordered.is-checked {
+  border-color: #8069f1;
+}
+
 // .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
 //   border-bottom: 2px solid #6246e9;
 // }

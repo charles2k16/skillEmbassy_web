@@ -10,9 +10,6 @@
             About <br />
             Skill Embassy
           </h2>
-          <p class="text_highlight mt-20">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-          </p>
         </div>
       </el-col>
       <el-col :xs="24" :sm="24" :md="14">
@@ -109,7 +106,7 @@
 <script>
 export default {
   name: 'Testimonies',
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -3,7 +3,7 @@
     <div class="course_page_header">
       <div class="section py-100">
         <el-row :gutter="50">
-          <el-col :xs="12" :sm="12" :md="12">
+          <el-col :xs="24" :sm="24" :md="12">
             <h3 class="white course_hd">Software Development</h3>
             <p class="mt-40 text_highlight white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -16,8 +16,14 @@
             >
           </el-col>
 
-          <el-col :xs="12" :sm="12" :md="12">
-            <div class="d-flex-align-center justify-right"></div>
+          <el-col :xs="24" :sm="24" :md="12">
+            <div class="d-flex-align-center justify-right">
+              <img
+                src="../../assets/images/gifs/software-dev.gif"
+                alt="gif"
+                width="100%"
+              />
+            </div>
           </el-col>
         </el-row>
       </div>
@@ -27,7 +33,7 @@
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
@@ -36,7 +42,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
@@ -45,7 +51,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">"Senior" Freshers</div>
               <p class="px-0 mt-10">
@@ -66,7 +72,7 @@
           <el-col :xs="24" :sm="24" :md="10">
             <div>
               <img
-                src="../../assets/images/gifs/software-dev.gif"
+                src="../../assets/images/live-classes.png"
                 alt="gif"
                 width="100%"
               />

@@ -3,11 +3,11 @@ import App from './App.vue';
 import mixin from './mixins';
 import router from './router';
 
-import Flutterwave from 'flutterwave-vue-v3';
+// import Flutterwave from 'flutterwave-vue-v3';
 
-Vue.use(Flutterwave, {
-  publicKey: 'FLWPUBK-d5779badebf4fe173a9b8a61c83a5b93-X',
-});
+// Vue.use(Flutterwave, {
+//   publicKey: 'FLWPUBK-5ebd017ca95ff4070bc5f4a5929ae790-X',
+// });
 
 import 'material-icons/iconfont/material-icons.css';
 
