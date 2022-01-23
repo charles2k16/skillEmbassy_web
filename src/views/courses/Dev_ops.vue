@@ -4,9 +4,7 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="10">
-            <h3 class="white course_hd">
-              Start Your Career As A DevOps Engineer
-            </h3>
+            <h3 class="course_hd">Start Your Career As A DevOps Engineer</h3>
             <p class="mt-40 text_highlight">
               Learnn the step by step method of creating, deploying and
               automating infrastructures directly from the leaders who have been

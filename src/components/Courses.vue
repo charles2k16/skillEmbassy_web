@@ -1,5 +1,5 @@
 <template>
-  <div class="section" style="margin-top: -200px">
+  <div class="section py-70">
     <div class="center">
       <h2 class="course_hd">Our Career Change Courses</h2>
       <p class="mt-10 text_highlight">
@@ -166,9 +166,9 @@ export default {
   // }
 
   .course_div {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
-    height: 350px;
+    // height: 350px;
     padding: 20px 15px 20px 15px;
     margin: 20px 20px;
     border-radius: 5px;

@@ -143,16 +143,32 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 .el-popover {
   background: #fff;
 }
-
+.el-steps {
+  margin-left: 100px;
+}
+.el-step.is-center .el-step__head {
+   text-align: start !important;
+}
 .el-step__icon {
   background: #F5F8FE;
   color: #8069f1;
 }
-
+.el-step.is-center .el-step__main {
+  text-align: start !important;
+}
+.el-step.is-center .el-step__description {
+  padding-left: 0;
+}
+.el-step.is-center .el-step__line {
+  left: 0 !important;
+  right: 0 !important;
+}
 .el-step__title.is-finish {
   color: #8069f1;
 }
-
+div.el-step.is-horizontal[style] {
+  flex-basis: 100% !important;
+}
 .el-step__description.is-finish {
   color: #8069f1;
 }

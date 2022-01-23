@@ -58,7 +58,12 @@
           </div>
 
           <div class="applcn_form">
-            <el-form ref="application" :model="application" class="form_width">
+            <el-form
+              ref="application"
+              :rules="rules"
+              :model="application"
+              class="form_width"
+            >
               <el-row v-if="activeStep === 1" :gutter="20">
                 <el-col :xs="24" :sm="24" :md="12">
                   <el-form-item prop="first_name">
@@ -235,30 +240,6 @@
                 </el-col>
               </el-row>
 
-              <!-- <el-row v-if="activeStep === 2" :gutter="20">
-              
-
-
-                
-
-   
-
-                <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
-                    label="What is your preferred stack? (Software Devs Only)"
-                    prop="stack"
-                  >
-                    <el-radio-group v-model="application.stack">
-                      <el-radio class="mt-10" label="Frontend"></el-radio>
-                      <br />
-                      <el-radio class="mt-10" label="Backend"></el-radio>
-                      <br />
-                      <el-radio class="mt-10" label="Fullstack"></el-radio>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-              </el-row> -->
-
               <div v-if="activeStep === 2">
                 <el-alert
                   class="pay_notice"
@@ -356,19 +337,13 @@ export default {
         first_name: '',
         last_name: '',
         email: '',
-        phone: '',
         gender: '',
         country: '',
         experience: '',
         employment: '',
-        internet: '',
         linkedIn: '',
         about_us: '',
-        time_zone: '',
-        website: '',
         stack: '',
-        project: '',
-        fav_project: '',
       },
       education: [
         'Bsc',
@@ -405,7 +380,7 @@ export default {
         last_name: [
           {
             required: true,
-            message: 'Please input first name',
+            message: 'Please input last name',
             trigger: 'blur',
           },
           {
@@ -413,13 +388,6 @@ export default {
             max: 20,
             message: 'Length should be 3 or gretaer',
             trigger: 'blur',
-          },
-        ],
-        phone: [
-          {
-            required: true,
-            message: 'Enter a valid number',
-            trigger: 'change',
           },
         ],
         email: [
@@ -437,19 +405,10 @@ export default {
             trigger: 'change',
           },
         ],
-        date2: [
+        education: [
           {
-            type: 'date',
             required: true,
-            message: 'Please pick a time',
-            trigger: 'change',
-          },
-        ],
-        type: [
-          {
-            type: 'array',
-            required: true,
-            message: 'Please select at least one activity type',
+            message: 'Please select education',
             trigger: 'change',
           },
         ],
@@ -460,11 +419,11 @@ export default {
             trigger: 'change',
           },
         ],
-        desc: [
+        experience: [
           {
             required: true,
-            message: 'Please input activity form',
-            trigger: 'blur',
+            message: 'Select your experince level',
+            trigger: 'change',
           },
         ],
       },
@@ -481,7 +440,7 @@ export default {
       if (this.activeStep == null) {
         this.activeStep = 1;
       } else if (this.activeStep === 1) {
-        this.activeStep = 2;
+        this.checkApplication();
       }
     },
     previousStep() {
@@ -491,14 +450,22 @@ export default {
         this.activeStep--;
       }
     },
+    checkApplication() {
+      this.$refs['application'].validate(valid => {
+        if (valid) {
+          alert('submit!');
+          this.activeStep = 2;
+        } else {
+          console.log('error submit!!');
+          return false;
+        }
+      });
+    },
     changeCourse(e) {
       this.activeCourse = e;
     },
     processPayment: () => {
       window.alert('Payment recieved');
-    },
-    makePaymentCallback(response) {
-      console.log('Pay', response);
     },
     closedPaymentModal() {
       console.log('payment is closed');
@@ -520,5 +487,22 @@ export default {
 .applcn_form {
   margin: 20px auto;
   width: 80%;
+}
+.select_course_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+
+  h3 {
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+  }
+  div {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 </style>

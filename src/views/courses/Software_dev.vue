@@ -4,8 +4,8 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
-            <h3 class="white course_hd">Software Development</h3>
-            <p class="mt-40 text_highlight white">
+            <h3 class="course_hd">Software Development</h3>
+            <p class="mt-40 text_highlight">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Architecto suscipit repellat quaerat dolore facere quidem totam
               necessitatibus ex? Voluptatem repellat tempore quibusdam rerum
@@ -66,106 +66,7 @@
     </div>
 
     <div class="bg_white py-100">
-      <div class="section">
-        <el-row :gutter="20">
-          <el-col :xs="24" :sm="24" :md="2"> .</el-col>
-          <el-col :xs="24" :sm="24" :md="10">
-            <div>
-              <img
-                src="../../assets/images/live-classes.png"
-                alt="gif"
-                width="100%"
-              />
-            </div>
-          </el-col>
-
-          <el-col :xs="24" :sm="24" :md="10">
-            <div>
-              <el-collapse
-                v-model="activeQuestion"
-                accordion
-                class="course_faq"
-              >
-                <el-collapse-item name="1">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Live Classes
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Repudiandae blanditiis unde enim assumenda, consectetur
-                      dolorem voluptates ab nam mollitia libero modi a quasi
-                      molestias exercitationem et iure placeat aspernatur
-                      doloribus.
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="2">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Hands-on
-                    Training
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Iure culpa odit aliquid id facere quae fuga, quia
-                      laboriosam eaque deserunt debitis vero voluptatem earum.
-                      Consequuntur voluptatum nam consequatur nisi sunt.
-                    </p>
-                  </div>
-                  <div></div>
-                </el-collapse-item>
-                <el-collapse-item name="3">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Solve Real
-                    World Problems
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repudiandae, unde! Veritatis, saepe maxime laboriosam
-                      numquam voluptatem sapiente soluta placeat magnam quo,
-                      ipsam harum accusantium. Similique aspernatur pariatur
-                      dolorem culpa quae!
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="4">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Mock
-                    Interviews
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Facilis deserunt eos, ipsa velit quae cupiditate
-                      repudiandae neque doloribus, aperiam dolor excepturi?
-                      Magnam quod voluptatum culpa doloribus eos consequatur
-                      soluta officia!
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="5">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Exhaustive
-                    Curriculum
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Nostrum laborum quo placeat molestias optio numquam,
-                      maiores molestiae autem adipisci repudiandae quaerat saepe
-                      incidunt earum quis omnis sequi ratione harum quam!
-                    </p>
-                  </div>
-                </el-collapse-item>
-              </el-collapse>
-            </div>
-          </el-col>
-
-          <el-col :xs="24" :sm="24" :md="2"> </el-col>
-        </el-row>
-      </div>
+      <LiveClasses />
     </div>
 
     <div class="py-70 curr_bg">
@@ -277,6 +178,7 @@
 import Faqs from '../../components/Faqs.vue';
 import Footer from '../../components/Footer.vue';
 import HowItWorks from '../../components/HowItWorks.vue';
+import LiveClasses from '../../components/LiveClasses.vue';
 
 export default {
   name: 'Product_management',
@@ -284,6 +186,7 @@ export default {
     Faqs,
     HowItWorks,
     Footer,
+    LiveClasses,
   },
   data() {
     return {
