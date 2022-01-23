@@ -20,12 +20,7 @@
             <el-step
               title="Basic Info"
               icon="el-icon-user"
-              description="Brief self details and introduction"
-            ></el-step>
-            <el-step
-              title="Education & Work"
-              icon="el-icon-upload"
-              description="A brief info on education and work experience"
+              description="Brief self introduction, education and work experience"
             ></el-step>
             <el-step
               title="Payments"
@@ -63,93 +58,75 @@
           </div>
 
           <div class="applcn_form">
-            <el-form
-              ref="application"
-              :model="application"
-              label-width="120px"
-              label-position="top"
-              class="form_width"
-            >
+            <el-form ref="application" :model="application" class="form_width">
               <el-row v-if="activeStep === 1" :gutter="20">
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="First Name" prop="first_name">
-                    <el-input v-model="application.first_name"></el-input>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="Last Name" prop="last_name">
-                    <el-input v-model="application.last_name"></el-input>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="Contact Email" prop="email">
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="first_name">
                     <el-input
-                      v-model="application.email"
-                      placeholder="your@email.com"
+                      v-model="application.first_name"
+                      placeholder="First Name"
+                      class="app_input"
                     ></el-input>
                   </el-form-item>
                 </el-col>
 
-                <el-col :xs="24" :sm="24" :md="8">
-                  <el-form-item label="Country" prop="country">
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="last_name">
+                    <el-input
+                      v-model="application.last_name"
+                      placeholder="Last Name"
+                      class="app_input"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
+
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="email">
+                    <el-input
+                      v-model="application.email"
+                      placeholder="your@email.com"
+                      class="app_input"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
+
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="country">
                     <el-select
                       v-model="application.country"
                       placeholder="Country of Residence"
+                      filterable
+                      class="app_input"
                     >
-                      <el-option label="Nigeria" value="nigeria"></el-option>
-                      <el-option label="Ghana" value="ghana"></el-option>
+                      <el-option
+                        v-for="country in countries"
+                        :key="country.code"
+                        :label="country.name"
+                        :value="country.name"
+                      ></el-option>
                     </el-select>
                   </el-form-item>
                 </el-col>
 
-                <el-col :xs="24" :sm="24" :md="6">
-                  <el-form-item label="Gender" prop="gender">
-                    <el-radio-group v-model="application.gender">
-                      <el-radio label="Male"></el-radio>
-                      <el-radio label="Female"></el-radio>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-
-                <el-col :xs="24" :sm="24" :md="24">
-                  <el-form-item
-                    label="What is your current experience level? *"
-                    prop="experience"
-                  >
-                    <el-radio-group v-model="application.experience">
-                      <el-radio label=" No experience"></el-radio> <br />
-                      <el-radio
-                        class="mt-10"
-                        label="Beginner: Total beginner/novice"
-                      ></el-radio>
-                      <br />
-                      <el-radio
-                        class="mt-10"
-                        label="Intermediate: I have completed some courses"
-                      ></el-radio>
-                      <br />
-                      <el-radio
-                        class="mt-10"
-                        label="Advanced: Relevant bootcamp experience"
-                      ></el-radio>
-                      <br />
-                      <el-radio
-                        class="mt-10"
-                        label="Professional:Actively working and looking to upskill"
-                      ></el-radio>
-                    </el-radio-group>
-                  </el-form-item>
-                </el-col>
-              </el-row>
-
-              <el-row v-if="activeStep === 2" :gutter="20">
                 <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item label="Employment Status" prop="employment">
+                  <el-form-item prop="gender">
+                    <el-select
+                      v-model="application.gender"
+                      placeholder="Gender"
+                      class="app_input"
+                    >
+                      <el-option label="Female" value="female"></el-option>
+                      <el-option label="Male" value="male"></el-option>
+                    </el-select>
+                  </el-form-item>
+                </el-col>
+
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="employment">
                     <el-select
                       v-model="application.employment"
-                      placeholder="Self Employed"
+                      placeholder="Employment Status"
+                      class="app_input"
                     >
                       <el-option
                         label="Unemployed"
@@ -165,8 +142,12 @@
                 </el-col>
 
                 <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item label="Level of Education" prop="education">
-                    <el-select v-model="application.education">
+                  <el-form-item prop="education">
+                    <el-select
+                      v-model="application.education"
+                      placeholder="Level of Education"
+                      class="app_input"
+                    >
                       <el-option
                         v-for="(edu, index) in education"
                         :key="index"
@@ -178,20 +159,22 @@
                 </el-col>
 
                 <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item label="LinkedIn Profile" prop="linkedIn">
+                  <el-form-item prop="linkedIn">
                     <el-input
                       v-model="application.linkedIn"
-                      placeholder="linkedin.com/skillembasyy"
+                      placeholder="LinkedIn Profile"
+                      class="app_input"
                     ></el-input>
                   </el-form-item>
                 </el-col>
 
                 <el-col :xs="24" :sm="24" :md="12">
-                  <el-form-item
-                    label="How did you hear about us?"
-                    prop="about_us"
-                  >
-                    <el-select v-model="application.about_us">
+                  <el-form-item prop="about_us">
+                    <el-select
+                      v-model="application.about_us"
+                      placeholder="How did you hear about us?"
+                      class="app_input"
+                    >
                       <el-option
                         v-for="(x, i) in about_us"
                         :key="i"
@@ -201,6 +184,64 @@
                     </el-select>
                   </el-form-item>
                 </el-col>
+
+                <el-col :xs="24" :sm="24" :md="12">
+                  <el-form-item prop="stack">
+                    <el-select
+                      v-model="application.stack"
+                      placeholder="What is your preferred stack? (Software Devs Only)"
+                      class="app_input"
+                    >
+                      <el-option label="Frontend" value="Frontend"></el-option>
+
+                      <el-option label="Backend" value="Backend"></el-option>
+
+                      <el-option
+                        label="Fullstack"
+                        value="Fullstack"
+                      ></el-option>
+                    </el-select>
+                  </el-form-item>
+                </el-col>
+
+                <el-col :xs="24" :sm="24" :md="24">
+                  <el-form-item prop="experience">
+                    <el-select
+                      v-model="application.experience"
+                      placeholder="What is your current experience level? "
+                    >
+                      <el-option label=" No experience"></el-option>
+                      <el-option
+                        value="Beginner"
+                        label="Beginner: Total beginner/novice"
+                      ></el-option>
+
+                      <el-option
+                        value="Intermediate"
+                        label="Intermediate: I have completed some courses"
+                      ></el-option>
+
+                      <el-option
+                        value="Advanced"
+                        label="Advanced: Relevant bootcamp experience"
+                      ></el-option>
+
+                      <el-option
+                        value="Professional"
+                        label="Professional:Actively working and looking to upskill"
+                      ></el-option>
+                    </el-select>
+                  </el-form-item>
+                </el-col>
+              </el-row>
+
+              <!-- <el-row v-if="activeStep === 2" :gutter="20">
+              
+
+
+                
+
+   
 
                 <el-col :xs="24" :sm="24" :md="12">
                   <el-form-item
@@ -216,9 +257,9 @@
                     </el-radio-group>
                   </el-form-item>
                 </el-col>
-              </el-row>
+              </el-row> -->
 
-              <div v-if="activeStep === 3">
+              <div v-if="activeStep === 2">
                 <el-alert
                   class="pay_notice"
                   title="Payment Notice"
@@ -241,14 +282,14 @@
 
           <div class="center mt-70">
             <el-button
-              v-if="activeStep > 1"
+              v-if="activeStep > 1 || activeStep == 1"
               :type="activeStep > 0 ? 'danger' : 'primary'"
               icon="el-icon-back"
-              @click="activeStep--"
+              @click="previousStep"
               >Previous</el-button
             >
             <el-button
-              v-if="activeStep < 3"
+              v-if="activeStep < 2"
               :type="activeStep == null ? 'danger' : 'primary'"
               icon="el-icon-right"
               @click="nextStep"
@@ -259,15 +300,8 @@
               }}</el-button
             >
 
-            <!-- <el-button
-              v-if="activeStep == 3"
-              type="primary"
-              @click="payViaService"
-              >Proceed to Payments</el-button
-            > -->
-
             <paystack
-              v-if="activeStep == 3"
+              v-if="activeStep == 2"
               class="payment_btn"
               :amount="amount * 100"
               currency="GHS"
@@ -293,6 +327,7 @@
 <script>
 import paystack from 'vue-paystack';
 import Footer from '../components/Footer.vue';
+import countriesJson from '../api/countries.json';
 // import pay from '../api/pay';
 
 export default {
@@ -313,6 +348,7 @@ export default {
   },
   data() {
     return {
+      countries: countriesJson,
       amount: 2,
       activeCourse: '',
       activeStep: null,
@@ -446,8 +482,13 @@ export default {
         this.activeStep = 1;
       } else if (this.activeStep === 1) {
         this.activeStep = 2;
-      } else if (this.activeStep === 2) {
-        this.activeStep = 3;
+      }
+    },
+    previousStep() {
+      if (this.activeStep == 1) {
+        this.activeStep = null;
+      } else {
+        this.activeStep--;
       }
     },
     changeCourse(e) {

@@ -90,6 +90,12 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
   font-family: Nunito;
   height: 50px;
 }
+.app_input .el-input__inner {
+  height: 70px !important;
+}
+.form_width .el-input {
+  font-size: 17px;
+}
 
 .el-select {
   width: 100%;
