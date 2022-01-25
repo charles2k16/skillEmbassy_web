@@ -14,13 +14,13 @@
             </p>
 
             <el-button
-              class="mt-20"
+              class="mt-30 mr-20"
               size="large"
               type="primary"
               @click="applyCourse('software_dev')"
               >Apply Now</el-button
             >
-            <el-button class="mt-20" size="large" type="danger" plain
+            <el-button class="mt-30" size="large" type="danger" plain
               ><a href="http://localhost:8080/#courses">View Courses</a>
             </el-button>
           </div>
@@ -49,6 +49,10 @@ export default {
 <style lang="scss" scoped>
 .hero_wrapper {
   padding: 20px 10px 20px 5px;
+
+  p {
+    width: 450px;
+  }
 }
 a {
   color: inherit;

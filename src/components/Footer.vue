@@ -1,19 +1,17 @@
 <template>
   <div class="section py-100">
     <el-row :gutter="20">
-      <el-col :xs="12" :sm="12" :md="12">
+      <el-col :xs="24" :sm="24" :md="12">
         <div class="white mt-20">
           Skill Embassy
           <p class="white px-10 mt-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
-            <br />
-            ea Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            blanditiis <br />
-            quod earum libero nostrum id neque autem provident in molestias
+            Skill Embassy empowers and prepares product managers, product
+            designers, and software developers for success within the tech
+            industry.
           </p>
         </div>
       </el-col>
-      <el-col :xs="12" :sm="12" :md="12">
+      <el-col :xs="24" :sm="24" :md="12">
         <div class="d-flex justify-evenly">
           <el-input
             v-model="email"
@@ -35,7 +33,7 @@
     <hr />
 
     <el-row :gutter="20" class="mt-40">
-      <el-col :xs="12" :sm="12" :md="5">
+      <el-col :xs="24" :sm="24" :md="5">
         <div class="footer_content">
           <h4>Contact Us</h4>
           <ul class="mt-20">
@@ -47,7 +45,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="12" :sm="12" :md="5">
+      <el-col :xs="24" :sm="24" :md="5">
         <div class="footer_content">
           <h4>Courses</h4>
           <ul class="mt-20">
@@ -60,7 +58,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="12" :sm="12" :md="4">
+      <el-col :xs="24" :sm="24" :md="4">
         <div class="footer_content">
           <h4>Help</h4>
           <ul class="mt-20">
@@ -71,7 +69,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="12" :sm="12" :md="4">
+      <el-col :xs="24" :sm="24" :md="4">
         <div class="footer_content">
           <h4>Refund Policy</h4>
           <ul class="mt-20">
@@ -80,7 +78,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="12" :sm="12" :md="5">
+      <el-col :xs="24" :sm="24" :md="5">
         <div class="footer_social">
           <a><img src="/instagram.png" alt="instagram" /></a>
           <a><img src="/facebook.png" alt="facebook" /></a>

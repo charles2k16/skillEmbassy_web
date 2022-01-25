@@ -3,8 +3,7 @@
     <el-row :gutter="50">
       <el-col :xs="24" :sm="24" :md="10">
         <div>
-          <h4>TESTIMONIAL</h4>
-          <h2 class="mt-20">
+          <h2>
             What Some <br />
             Students Say <br />
             About <br />

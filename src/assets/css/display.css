@@ -1,5 +1,16 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .bg_secondary {
+    background: #f6f8ff;
+  }
+
+  .hero_wrapper {
+    padding: 10px 10px 20px 15px !important;
+  }
+
+  .whyUs_item {
+    width: 100% !important;
+  }
 }
 
 /* ----------- iPhone 12 pro max ----------- */

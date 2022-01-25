@@ -27,10 +27,8 @@
 }
 html,
 body {
-  min-height: 100%;
   font-family: Nunito, sans-serif;
   background-color: #f8f8f8;
-  min-width: 950px;
 }
 * {
   margin: 0;
@@ -41,10 +39,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 h1 {
   font-size: 3.5rem;
-  line-height: 60px;
+  line-height: 65px;
   font-family: Poppins;
   color: #1c1e27;
 }
@@ -75,10 +74,13 @@ a {
   margin-top: 15px;
 }
 .mt-20 {
-  margin-top: 20px !important;
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px !important;
 }
 .mt-40 {
-  margin-top: 40px !important;
+  margin-top: 40px;
 }
 .mt-70 {
   margin-top: 70px;
@@ -96,7 +98,7 @@ a {
   margin-right: 10px;
 }
 .mr-20 {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 
 /*  padding rules */
@@ -186,7 +188,7 @@ a {
 }
 .bg_secondary {
   width: 100%;
-  background: linear-gradient(90deg, #f6f8ff 60%, var(--primary) 40%);
+  background: #f6f8ff;
 }
 .bg_devops {
   width: 100%;
@@ -212,12 +214,7 @@ a {
   background-size: cover;
 }
 .bg_callUs {
-  background: rgb(98, 70, 234);
-  background: linear-gradient(
-    156deg,
-    rgba(98, 70, 234, 1) 46%,
-    rgba(8, 84, 241, 1) 83%
-  );
+  background: #373b51;
 }
 /* .bg_blog {
 
@@ -233,13 +230,7 @@ a {
   background: #0d0d0d;
 }
 .bg_mentors {
-  background: rgb(98, 70, 234);
-  background: linear-gradient(
-    90deg,
-    rgba(98, 70, 234, 1) 0%,
-    rgba(253, 163, 16, 0.8869922969187675) 50%,
-    rgba(105, 78, 237, 1) 100%
-  );
+  background: #041220;
 }
 .break {
   flex-basis: 100%;
@@ -247,7 +238,7 @@ a {
 }
 .text_highlight {
   font-size: 1.2rem;
-  line-height: 25px;
+  line-height: 30px;
 }
 .white {
   color: rgb(240, 240, 240);

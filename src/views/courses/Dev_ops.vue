@@ -10,7 +10,12 @@
               automating infrastructures directly from the leaders who have been
               there and done that.
             </p>
-            <el-button type="primary" class="mt-20">Apply Now</el-button>
+            <el-button
+              type="primary"
+              class="mt-20"
+              @click="applyCourse('dev_ops')"
+              >Apply Now</el-button
+            >
           </el-col>
 
           <el-col :xs="24" :sm="24" :md="14">
@@ -86,6 +91,12 @@
 
     <div class="curr_bg py-70">
       <h3 class="center h_title">Curriculum</h3>
+      <br />
+      <p class="text_highlight curr_p">
+        With an extensive curriculum, we provide exclusive learning contents
+        that focus on the significant growth of your remarkable engineering,
+        design, and management career.
+      </p>
       <div class="section d-flex-center">
         <el-collapse accordion class="curriculum mt-20 mb-40">
           <el-collapse-item

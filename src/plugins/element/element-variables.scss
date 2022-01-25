@@ -67,7 +67,6 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 .el-button {
   font-family: Nunito;
 }
-
 .el-button--primary.is-plain {
   color: #FFF;
   background: #8976f5;
@@ -172,24 +171,19 @@ div.el-step.is-horizontal[style] {
 .el-step__description.is-finish {
   color: #8069f1;
 }
-
 .el-select-dropdown__item.selected {
   color: #8069f1;
   font-weight: 700;
 }
-
 .el-radio__label {
   font-size: 15px;
 }
-
 .el-form-item__label {
   font-size: 17px !important;
 }
-
 .el-radio__input.is-checked+.el-radio__label {
   color: #8069f1;
 }
-
 .el-radio__input.is-checked .el-radio__inner {
   border-color: #8069f1;
   background: #8069f1;
@@ -198,12 +192,10 @@ div.el-step.is-horizontal[style] {
 .el-form-item__label {
   font-size: 15px;
 }
-
 .el-step__head.is-finish {
   color: #8069f1;
   border-color: #8069f1;
 }
-
 .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
   color: #6246ea;
 }
@@ -214,6 +206,7 @@ div.el-step.is-horizontal[style] {
 
 .el-alert .el-alert__description {
   font-size: 15px;
+    line-height: 25px;
 }
 .pay_notice.el-alert--error.is-light {
   background-color: #f16565;
@@ -252,6 +245,10 @@ div.el-step.is-horizontal[style] {
   border-color: #8069f1;
 }
 
-// .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
-//   border-bottom: 2px solid #6246e9;
-// }
+.el-dropdown {
+  font-size: 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -4,8 +4,6 @@
       <el-col :xs="24" :sm="24" :md="12">
         <div class="mentors_div py-100">
           <div>
-            <h4>They Love What They Do</h4>
-
             <h3 class="mt-20">
               Our Mentors <br />
               from Renowed Industries
@@ -17,7 +15,9 @@
             </p>
 
             <el-button type="danger" class="mt-40" icon="el-icon-user">
-              <b>JOIN AS A MENTOR</b></el-button
+              <a href="https://forms.gle/1u4vGT93avTTxWEd8" target="_blank"
+                ><b>JOIN AS A MENTOR</b></a
+              ></el-button
             >
           </div>
         </div>

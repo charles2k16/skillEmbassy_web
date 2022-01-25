@@ -4,12 +4,13 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
-            <h3 class="white course_hd">Data Science</h3>
+            <h3 class="white course_hd">
+              Start Your Career As A Data Scientist
+            </h3>
             <p class="mt-40 text_highlight">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto suscipit repellat quaerat dolore facere quidem totam
-              necessitatibus ex? Voluptatem repellat tempore quibusdam rerum
-              sequi ipsam ad aliquid tempora mollitia soluta.
+              Do you want to enjoy the experience of developing and launching a
+              social or human problem from idea to completion with your own
+              designer, product manager, and software developer?
             </p>
             <el-button
               type="primary"
@@ -40,8 +41,8 @@
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Seeking to move into product management jobs from backgrounds in
+                engineering, marketing, sales, design, operations, and finance
               </p>
             </div>
           </el-col>
@@ -49,8 +50,9 @@
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Seeking to establish a product mentality for their own endeavors
+                in order to generate great products faster while avoiding
+                potentially fatal mistakes
               </p>
             </div>
           </el-col>
@@ -76,10 +78,9 @@
       <h3 class="center h_title">Curriculum</h3>
       <br />
       <p class="text_highlight curr_p">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-        adipisci cupiditate aspernatur soluta quasi veniam, explicabo minus
-        autem facere. In laudantium ab, error dignissimos doloremque repellat
-        consequuntur consequatur nulla sequi!
+        With an extensive curriculum, we provide exclusive learning contents
+        that focus on the significant growth of your remarkable engineering,
+        design, and management career.
       </p>
       <div class="section mt-20 d-flex-center">
         <el-collapse
@@ -113,27 +114,6 @@
         >
       </div>
     </div>
-    <!-- <div class="py-70">
-      <h3 class="center h_title">Prequisites</h3>
-      <div class="section preq">
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-      </div>
-    </div> -->
 
     <div class="full_width bg_business">
       <HowItWorks />

@@ -5,7 +5,7 @@
         <div class="center">
           <h2 class="white">Application Process</h2>
           <p class="text_highlight applcn_intro_p">
-            Thank you for your interest in applying to Skill Ebmassy Africa. We
+            Thank you for your interest in applying to Skill Embmassy Africa. We
             believe we can achieve the dream together. To proceeed with your
             application process, please take note of the fee charged (GHC 80 /
             $12) and the selective process below.
@@ -215,7 +215,10 @@
                       v-model="application.experience"
                       placeholder="What is your current experience level? "
                     >
-                      <el-option label=" No experience"></el-option>
+                      <el-option
+                        label="No experience"
+                        value="No experience"
+                      ></el-option>
                       <el-option
                         value="Beginner"
                         label="Beginner: Total beginner/novice"
@@ -319,12 +322,8 @@ export default {
   },
   computed: {
     reference() {
-      let text = '';
-      let possible =
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      for (let i = 0; i < 10; i++)
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-      return text;
+      let date = new Date();
+      return date.getTime().toString();
     },
   },
   data() {
@@ -431,9 +430,6 @@ export default {
   },
   created() {
     this.activeCourse = this.$route.query.name;
-    console.log(this.activeCourse);
-
-    // pay.verifyDisableOTP();
   },
   methods: {
     nextStep() {
@@ -453,7 +449,6 @@ export default {
     checkApplication() {
       this.$refs['application'].validate(valid => {
         if (valid) {
-          alert('submit!');
           this.activeStep = 2;
         } else {
           console.log('error submit!!');
@@ -469,10 +464,6 @@ export default {
     },
     closedPaymentModal() {
       console.log('payment is closed');
-    },
-    generateReference() {
-      let date = new Date();
-      return date.getTime().toString();
     },
   },
 };

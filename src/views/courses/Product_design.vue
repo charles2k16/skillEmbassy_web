@@ -4,7 +4,7 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
-            <h3 class="course_hd">Digital Product Designer</h3>
+            <h3 class="course_hd">Become A Digital Product Designer</h3>
             <p class="mt-40 text_highlight">
               Learn the step by step method of creating managing and growing
               successful products, directly from the leaders who have been there
@@ -36,8 +36,9 @@
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Professionals Seeking to move into product design jobs from
+                backgrounds in engineering, marketing, sales, design,
+                operations, and finance
               </p>
             </div>
           </el-col>
@@ -45,8 +46,9 @@
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Seeking to establish a product mentality for their own endeavors
+                in order to generate great products faster while avoiding
+                potentially fatal mistakes
               </p>
             </div>
           </el-col>
@@ -54,8 +56,9 @@
             <div class="program_div">
               <div class="program">"Senior" Freshers</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Freshers: who are prepared to put in more effort to study the
+                actual art of product design and growth and advance into product
+                jobs in tech firms
               </p>
             </div>
           </el-col>
@@ -72,10 +75,9 @@
       <h3 class="center h_title">Curriculum</h3>
       <br />
       <p class="text_highlight curr_p">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-        adipisci cupiditate aspernatur soluta quasi veniam, explicabo minus
-        autem facere. In laudantium ab, error dignissimos doloremque repellat
-        consequuntur consequatur nulla sequi!
+        With an extensive curriculum, we provide exclusive learning contents
+        that focus on the significant growth of your remarkable engineering,
+        design, and management career.
       </p>
       <div class="section mt-20 d-flex-center">
         <el-collapse

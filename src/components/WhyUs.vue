@@ -84,6 +84,7 @@ export default {
     max-width: 800px;
     width: 100%;
     font-size: 1.3rem;
+    padding: 10px;
   }
   h2 {
     max-width: 850px;
@@ -98,16 +99,18 @@ export default {
 }
 .why_us_div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   .whyUs_item {
     margin-top: 40px;
-    width: 48%;
+    max-width: 420px;
+    width: 100%;
     text-align: center;
+    padding: 0 5px;
 
     .material-icons-outlined {
-      font-size: 80px;
+      font-size: 4rem;
       color: #756985;
     }
 

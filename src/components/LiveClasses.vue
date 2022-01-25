@@ -70,7 +70,7 @@
             </el-collapse-item>
             <el-collapse-item name="5">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Exhaustive
+                <i class="header-icon el-icon-info mr-1"></i> Extensive
                 Curriculum
               </template>
               <div>

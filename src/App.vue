@@ -3,7 +3,7 @@
     <el-header>
       <div class="section">
         <el-row :gutter="10">
-          <el-col :xs="7" :sm="7" :md="6">
+          <el-col :xs="10" :sm="10" :md="6">
             <div
               class="logo_div d-flex-align-center"
               @click="$router.push('/')"
@@ -12,7 +12,7 @@
             </div>
           </el-col>
 
-          <el-col :xs="17" :sm="17" :md="13">
+          <el-col :xs="14" :sm="14" :md="13">
             <el-dropdown class="hidden-md-and-up mobile_dropdown">
               <span class="el-dropdown-link">
                 <i class="el-icon-menu"></i>
@@ -105,5 +105,8 @@ export default {
 }
 .el-menu.el-menu--horizontal {
   border-bottom: none !important;
+}
+.el-icon-menu {
+  font-size: 25px;
 }
 </style>

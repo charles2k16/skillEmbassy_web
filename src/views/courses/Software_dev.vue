@@ -4,15 +4,18 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
-            <h3 class="course_hd">Software Development</h3>
+            <h3 class="course_hd">Become a Software Developer</h3>
             <p class="mt-40 text_highlight">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Architecto suscipit repellat quaerat dolore facere quidem totam
               necessitatibus ex? Voluptatem repellat tempore quibusdam rerum
               sequi ipsam ad aliquid tempora mollitia soluta.
             </p>
-            <el-button type="primary" class="mt-20"
-              >Talk to a Learning Advisor</el-button
+            <el-button
+              type="primary"
+              class="mt-20"
+              @click="applyCourse('software_dev')"
+              >Apply Now</el-button
             >
           </el-col>
 
@@ -37,8 +40,8 @@
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Professionals seeking to improve their communication and
+                teamwork skillset to land them jobs in big tech firms
               </p>
             </div>
           </el-col>
@@ -46,8 +49,9 @@
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Seeking to establish a product mentality for their own endeavors
+                in order to generate great products faster while avoiding
+                potentially fatal mistakes
               </p>
             </div>
           </el-col>
@@ -55,8 +59,9 @@
             <div class="program_div">
               <div class="program">"Senior" Freshers</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Freshers: who are prepared to put in more effort to study the
+                actual art of software development and growth and advance into
+                software jobs in tech firms
               </p>
             </div>
           </el-col>
@@ -73,10 +78,9 @@
       <h3 class="center h_title">Curriculum</h3>
       <br />
       <p class="text_highlight curr_p">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-        adipisci cupiditate aspernatur soluta quasi veniam, explicabo minus
-        autem facere. In laudantium ab, error dignissimos doloremque repellat
-        consequuntur consequatur nulla sequi!
+        With an extensive curriculum, we provide exclusive learning contents
+        that focus on the significant growth of your remarkable engineering,
+        design, and management career.
       </p>
       <div class="section mt-20 d-flex-center">
         <el-collapse

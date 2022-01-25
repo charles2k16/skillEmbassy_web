@@ -4,14 +4,17 @@
       <div class="section py-100">
         <el-row :gutter="50">
           <el-col :xs="12" :sm="12" :md="12">
-            <h3 class="white course_hd">Digital Product Management</h3>
+            <h3 class="white course_hd">Become A Digital Product Manager</h3>
             <p class="mt-40 text_highlight">
               Learn the step by step method of creating managingand growing
               successful products, directly from the leaders who have been there
               and done that.
             </p>
-            <el-button type="primary" class="mt-20"
-              >Talk to a Learning Advisor</el-button
+            <el-button
+              type="primary"
+              class="mt-20"
+              @click="applyCourse('product_management')"
+              >Apply Now</el-button
             >
           </el-col>
 
@@ -36,8 +39,9 @@
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Professionals Seeking to move into product management jobs from
+                backgrounds in engineering, marketing, sales, design,
+                operations, and finance
               </p>
             </div>
           </el-col>
@@ -45,17 +49,19 @@
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Seeking to establish a product mentality for their own endeavors
+                in order to generate great products faster while avoiding
+                potentially fatal mistakes
               </p>
             </div>
           </el-col>
           <el-col :xs="12" :sm="12" :md="8">
             <div class="program_div">
-              <div class="program">"Senior" Freshers</div>
+              <div class="program">"Serious" Freshers</div>
               <p class="px-0 mt-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                natus soluta tempore.
+                Freshers: who are prepared to put in more effort to study the
+                actual art of product management and growth and advance into
+                product jobs in tech firms
               </p>
             </div>
           </el-col>
@@ -65,116 +71,16 @@
     </div>
 
     <div class="bg_white py-100">
-      <div class="section">
-        <el-row :gutter="20">
-          <el-col :xs="24" :sm="24" :md="2"> .</el-col>
-          <el-col :xs="24" :sm="24" :md="10">
-            <div>
-              <img
-                src="../../assets/images/live-classes.png"
-                alt="gif"
-                width="100%"
-              />
-            </div>
-          </el-col>
-
-          <el-col :xs="24" :sm="24" :md="10">
-            <div>
-              <el-collapse
-                v-model="activeQuestion"
-                accordion
-                class="course_faq"
-              >
-                <el-collapse-item name="1">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Live Classes
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Repudiandae blanditiis unde enim assumenda, consectetur
-                      dolorem voluptates ab nam mollitia libero modi a quasi
-                      molestias exercitationem et iure placeat aspernatur
-                      doloribus.
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="2">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Hands-on
-                    Training
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Iure culpa odit aliquid id facere quae fuga, quia
-                      laboriosam eaque deserunt debitis vero voluptatem earum.
-                      Consequuntur voluptatum nam consequatur nisi sunt.
-                    </p>
-                  </div>
-                  <div></div>
-                </el-collapse-item>
-                <el-collapse-item name="3">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Solve Real
-                    World Problems
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Repudiandae, unde! Veritatis, saepe maxime laboriosam
-                      numquam voluptatem sapiente soluta placeat magnam quo,
-                      ipsam harum accusantium. Similique aspernatur pariatur
-                      dolorem culpa quae!
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="4">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Mock
-                    Interviews
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Facilis deserunt eos, ipsa velit quae cupiditate
-                      repudiandae neque doloribus, aperiam dolor excepturi?
-                      Magnam quod voluptatum culpa doloribus eos consequatur
-                      soluta officia!
-                    </p>
-                  </div>
-                </el-collapse-item>
-                <el-collapse-item name="5">
-                  <template slot="title">
-                    <i class="header-icon el-icon-info mr-1"></i> Exhaustive
-                    Curriculum
-                  </template>
-                  <div>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Nostrum laborum quo placeat molestias optio numquam,
-                      maiores molestiae autem adipisci repudiandae quaerat saepe
-                      incidunt earum quis omnis sequi ratione harum quam!
-                    </p>
-                  </div>
-                </el-collapse-item>
-              </el-collapse>
-            </div>
-          </el-col>
-
-          <el-col :xs="24" :sm="24" :md="2"> </el-col>
-        </el-row>
-      </div>
+      <LiveClasses />
     </div>
 
     <div class="py-70 curr_bg">
       <h3 class="center h_title">Curriculum</h3>
       <br />
       <p class="text_highlight curr_p">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-        adipisci cupiditate aspernatur soluta quasi veniam, explicabo minus
-        autem facere. In laudantium ab, error dignissimos doloremque repellat
-        consequuntur consequatur nulla sequi!
+        With an extensive curriculum, we provide exclusive learning contents
+        that focus on the significant growth of your remarkable engineering,
+        design, and management career.
       </p>
       <div class="section mt-20 d-flex-center">
         <el-collapse
@@ -276,6 +182,7 @@
 import Faqs from '../../components/Faqs.vue';
 import Footer from '../../components/Footer.vue';
 import HowItWorks from '../../components/HowItWorks.vue';
+import LiveClasses from '../../components/LiveClasses.vue';
 
 export default {
   name: 'Product_management',
@@ -283,6 +190,7 @@ export default {
     Faqs,
     HowItWorks,
     Footer,
+    LiveClasses,
   },
   data() {
     return {
