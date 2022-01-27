@@ -1,8 +1,5 @@
-/*
-Write your variables here. All available variables can be
-found in element-ui/packages/theme-chalk/src/common/var.scss.
-For example, to overwrite the theme color:
-*/
+$--color-primary: #6246ea;
+$--color-danger: #e45858;
 
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
@@ -25,7 +22,10 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
   font-size: 15px;
   color: #696b6d;
 }
-
+.el-button {
+  background: #0d1d2c;
+  color: #e3e6ed;
+}
 .el-main {
   padding: 0px;
 }
@@ -67,18 +67,18 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 .el-button {
   font-family: Nunito;
 }
-.el-button--primary.is-plain {
-  color: #FFF;
-  background: #8976f5;
-  border-color: #8069f1;
-}
+// .el-button--primary.is-plain {
+//   color: #FFF;
+//   background: #8976f5;
+//   border-color: #8069f1;
+// }
 
-.el-button--primary.is-plain:focus,
-.el-button--primary.is-plain:hover {
-  background: #8069f1;
-  border-color: #8069f1;
-  color: #FFF;
-}
+// .el-button--primary.is-plain:focus,
+// .el-button--primary.is-plain:hover {
+//   background: #8069f1;
+//   border-color: #8069f1;
+//   color: #FFF;
+// }
 
 .el-input.footer_input {
   font-size: 17px;
@@ -91,6 +91,7 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 }
 .app_input .el-input__inner {
   height: 70px !important;
+      border: 1px solid #9ca2b1;
 }
 .form_width .el-input {
   font-size: 17px;
@@ -251,4 +252,9 @@ div.el-step.is-horizontal[style] {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.el-menu--horizontal>.el-menu-item.is-active {
+  border-bottom: none;
+  color: #8069f1;
 }

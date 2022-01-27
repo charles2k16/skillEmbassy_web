@@ -4,13 +4,14 @@ import VueRouter from 'vue-router';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 import Blog from '@/views/Blog.vue';
+import Application from '@/views/Application.vue';
+import ForBusiness from '@/views/ForBusiness.vue';
 
 import Product_management from '@/views/courses/Product_management';
-import Application from '@/views/Application.vue';
-import Dev_ops from '@/views/courses/Dev_ops';
 import Product_design from '@/views/courses/Product_design';
 import Software_dev from '@/views/courses/Software_dev';
 import Data_science from '@/views/courses/Data_science';
+import Dev_ops from '@/views/courses/Dev_ops';
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/application',
     name: 'application',
     component: Application,
+  },
+  {
+    path: '/business',
+    name: 'business',
+    component: ForBusiness,
   },
   {
     path: '/courses/:dev_ops?',

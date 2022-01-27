@@ -11,7 +11,12 @@
             generation of engineers, managers and designers.
           </p>
 
-          <el-button type="danger" class="mt-40" icon="el-icon-phone"
+          <el-button
+            size="large"
+            plain
+            type="primary"
+            class="mt-40"
+            icon="el-icon-money"
             ><b>Learn More</b></el-button
           >
         </div>

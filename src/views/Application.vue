@@ -214,6 +214,7 @@
                     <el-select
                       v-model="application.experience"
                       placeholder="What is your current experience level? "
+                      class="app_input"
                     >
                       <el-option
                         label="No experience"

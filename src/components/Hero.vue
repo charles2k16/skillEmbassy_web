@@ -15,7 +15,6 @@
 
             <el-button
               class="mt-30 mr-20"
-              size="large"
               type="primary"
               @click="applyCourse('software_dev')"
               >Apply Now</el-button

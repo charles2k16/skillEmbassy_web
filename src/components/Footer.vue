@@ -80,9 +80,9 @@
       </el-col>
       <el-col :xs="24" :sm="24" :md="5">
         <div class="footer_social">
-          <a><img src="/instagram.png" alt="instagram" /></a>
-          <a><img src="/facebook.png" alt="facebook" /></a>
-          <a><img src="/linkedin.png" alt="linkedin" /></a>
+          <a><img src="../assets/images/instagram.png" alt="instagram" /></a>
+          <a><img src="../assets/images/facebook.png" alt="facebook" /></a>
+          <a><img src="../assets/images/linkedin.png" alt="linkedin" /></a>
         </div>
         <div class="copyright mt-20">
           <p>Find us on Socila Media</p>

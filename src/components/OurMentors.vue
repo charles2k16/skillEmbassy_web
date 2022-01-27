@@ -14,7 +14,7 @@
               more.
             </p>
 
-            <el-button type="danger" class="mt-40" icon="el-icon-user">
+            <el-button class="mt-40" icon="el-icon-user">
               <a href="https://forms.gle/1u4vGT93avTTxWEd8" target="_blank"
                 ><b>JOIN AS A MENTOR</b></a
               ></el-button

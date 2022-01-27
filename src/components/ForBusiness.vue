@@ -1,5 +1,5 @@
 <template>
-  <div class="section business py-150">
+  <div class="section business py-100">
     <h1>For Businesses</h1>
 
     <el-row :gutter="50" class="mt-70">
@@ -13,7 +13,7 @@
           that makes your team more agile, collaborative and innovative.
         </p>
 
-        <el-button type="danger" class="mt-40" icon="el-icon-phone"
+        <el-button class="mt-40" icon="el-icon-phone"
           ><b>TALK TO US</b></el-button
         >
       </el-col>

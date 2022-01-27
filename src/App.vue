@@ -51,7 +51,9 @@
                   >Data Science</el-menu-item
                 >
               </el-submenu>
-              <el-menu-item index="2">For Business</el-menu-item>
+              <el-menu-item index="2" @click="$router.push('/business')"
+                >For Business</el-menu-item
+              >
               <el-menu-item index="3">Our Story</el-menu-item>
               <el-menu-item index="4" @click="$router.push('/blog')"
                 >Blog</el-menu-item
@@ -65,7 +67,7 @@
               class="d-flex justify-right d-flex-align-center"
               style="height: 60px"
             >
-              <el-button size="mini" type="primary" @click="applyCourse"
+              <el-button size="small" type="primary" @click="applyCourse"
                 >Apply Now</el-button
               >
             </div>

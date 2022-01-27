@@ -12,7 +12,7 @@
             leverage your ways into tech.
           </p>
 
-          <el-button class="mt-40" type="danger">Apply for a Course Refund</el-button>
+          <el-button type="primary" class="mt-40" >Apply for a Course Refund</el-button>
         </div>
       </el-col>
 

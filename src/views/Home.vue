@@ -36,14 +36,16 @@
       </div>
 
       <div class="mt-40 d-flex justify_center">
-        <el-button type="danger" plain
+        <el-button plain type="primary" icon="el-icon-phone "
           ><a
             href="https://calendly.com/skillembassy/consultation"
             target="_blank"
             >SCHEDULE A 1:1 CALL</a
           >
         </el-button>
-        <el-button type="danger" plain>JOIN A Q&A SESSION</el-button>
+        <el-button plain type="primary" icon="el-icon-phone ">
+          JOIN A Q&A SESSION</el-button
+        >
       </div>
     </div>
 
@@ -77,7 +79,8 @@
 
       <div class="mt-40 d-flex justify_center">
         <el-button
-          type="danger"
+          plain
+          type="primary"
           icon="el-icon-edit-outline"
           @click="applyCourse"
         >
