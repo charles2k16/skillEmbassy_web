@@ -16,7 +16,7 @@
         </div>
       </el-col>
 
-      <el-col :xs="24" :sm="24" :md="12">
+      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
         <div>
           <el-collapse accordion>
             <el-collapse-item

@@ -1,5 +1,5 @@
 <template>
-  <div class="section business py-100">
+  <div class="section business">
     <h1>For Businesses</h1>
 
     <el-row :gutter="50" class="mt-70">
@@ -18,7 +18,7 @@
         >
       </el-col>
 
-      <el-col :xs="24" :sm="24" :md="12">
+      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
         <div>
           <img
             src="../assets/images/for-businesses.png"
@@ -39,6 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .business {
+  padding: 0px 10px;
   h1,
   h2,
   p {

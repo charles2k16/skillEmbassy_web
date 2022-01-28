@@ -55,6 +55,7 @@ h2 {
 }
 p {
   font-family: Nunito;
+  line-height: 25px;
 }
 hr {
   border: 1px solid rgb(32, 31, 31);
@@ -160,6 +161,9 @@ a {
 }
 .d-flex {
   display: flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
 }
 .d-flex-center {
   display: flex;
@@ -334,12 +338,12 @@ a {
   border-radius: 10px;
 }
 .callUs_p {
-  font-size: 17px;
+  font-size: 1.2rem;
   color: rgb(224, 223, 223);
   text-transform: uppercase;
 }
 .callUs_h3 {
-  font-size: 22px;
+  font-size: 1.3rem;
   font-family: Poppins;
   color: rgb(224, 223, 223);
 }
@@ -391,7 +395,7 @@ a {
 }
 .curr_p {
   max-width: 770px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 .payment_btn {

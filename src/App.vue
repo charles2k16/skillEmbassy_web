@@ -18,11 +18,59 @@
                 <i class="el-icon-menu"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>Action 1</el-dropdown-item>
-                <el-dropdown-item>Action 2</el-dropdown-item>
-                <el-dropdown-item>Action 3</el-dropdown-item>
-                <el-dropdown-item disabled>Action 4</el-dropdown-item>
-                <el-dropdown-item divided>Action 5</el-dropdown-item>
+                <el-dropdown-item>
+                  <el-menu
+                    :default-active="activeIndex"
+                    class="el-menu-demo hidden-sm-and-down"
+                    mode="vertical"
+                    router
+                  >
+                    <el-submenu index="1">
+                      <template slot="title">Courses</template>
+                      <el-menu-item
+                        index="1"
+                        @click="viewCourse('product_management')"
+                        >Product Management</el-menu-item
+                      >
+                      <el-menu-item
+                        index="1-2"
+                        @click="viewCourse('product_design')"
+                        >Product Design</el-menu-item
+                      >
+                      <el-menu-item
+                        index="1-3"
+                        @click="viewCourse('software_dev')"
+                        >Software Development</el-menu-item
+                      >
+                      <el-menu-item index="1-4" @click="viewCourse('dev_ops')"
+                        >DevOps Engineer</el-menu-item
+                      >
+                      <el-menu-item
+                        index="1-5"
+                        @click="viewCourse('data_science')"
+                        >Data Science</el-menu-item
+                      >
+                    </el-submenu>
+                  </el-menu>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="$router.push('/blog')"> Blog </span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="$router.push('/story')">Our Story </span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="$router.push('/business')">For Business</span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span>Podcast </span>
+                </el-dropdown-item>
+
+                <el-dropdown-item divided>
+                  <el-button size="small" type="primary" @click="applyCourse"
+                    >Apply Now</el-button
+                  >
+                </el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
             <el-menu
@@ -54,7 +102,9 @@
               <el-menu-item index="2" @click="$router.push('/business')"
                 >For Business</el-menu-item
               >
-              <el-menu-item index="3">Our Story</el-menu-item>
+              <el-menu-item index="3" @click="$router.push('/story')"
+                >Our Story</el-menu-item
+              >
               <el-menu-item index="4" @click="$router.push('/blog')"
                 >Blog</el-menu-item
               >

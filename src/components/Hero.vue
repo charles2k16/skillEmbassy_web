@@ -25,7 +25,7 @@
           </div>
         </el-col>
 
-        <el-col :xs="24" :sm="24" :md="12">
+        <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
           <div class="d-flex-align-center justify-right">
             <img
               src="../assets/images/skill-embassy-head.png"
@@ -50,7 +50,8 @@ export default {
   padding: 20px 10px 20px 5px;
 
   p {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 a {

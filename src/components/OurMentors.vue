@@ -24,8 +24,8 @@
       </el-col>
 
       <el-col :xs="24" :sm="24" :md="12">
-        <div class="mentors_img py-100">
-          <div class="d-flex justify-evenly">
+        <div class="mentors_img">
+          <div class="d-flex justify-evenly flex_wrap">
             <el-popover
               v-for="(mentor, idx) in mentors.mentor1"
               :key="idx"
@@ -50,7 +50,7 @@
             </el-popover>
           </div>
 
-          <div class="d-flex justify-evenly">
+          <div class="d-flex justify-evenly flex_wrap">
             <el-popover
               v-for="(mentor, id) in mentors.mentor2"
               :key="id"
@@ -75,7 +75,7 @@
             </el-popover>
           </div>
 
-          <div class="d-flex justify_center">
+          <div class="d-flex justify_center flex_wrap">
             <el-popover
               v-for="(mentor, i) in mentors.mentor3"
               :key="i"
@@ -102,7 +102,7 @@
             </el-popover>
           </div>
 
-          <div class="d-flex justify-evenly">
+          <div class="d-flex justify-evenly flex_wrap">
             <el-popover
               v-for="(mentor, index) in mentors.mentor4"
               :key="index"
@@ -253,21 +253,16 @@ export default {
   padding-left: 10px;
   padding-right: 10px;
 
-  h4 {
-    font-size: 17px;
-    font-weight: 900;
-    color: rgb(11, 4, 107);
-  }
   h3 {
     color: rgb(252, 239, 239);
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 60px;
     font-family: PoppinsMedium;
   }
 }
 
 .mentors_img {
-  // background: #fda310;
+  padding: 100px 0px;
 
   .mentor_details {
     h3 {

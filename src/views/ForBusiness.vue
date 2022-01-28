@@ -18,7 +18,7 @@
             >
           </el-col>
 
-          <el-col :xs="24" :sm="24" :md="12">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
                 src="https://via.placeholder.com/458x300?text=Business+Image"
@@ -33,15 +33,15 @@
 
     <div class="mt-40">
       <div class="section py-100">
-        <el-row :gutter="50">
-          <el-col :xs="24" :sm="24" :md="12">
+        <el-row :gutter="50" type="flex" justify="space-between">
+          <el-col :span="12" class="mob_mt">
             <img
               src="https://via.placeholder.com/458x300?text=Business+Image"
               alt=""
             />
           </el-col>
 
-          <el-col :xs="24" :sm="24" :md="12">
+          <el-col :span="12">
             <div class="mt-40">
               <p class="business_p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
@@ -58,7 +58,7 @@
     <div class="bg_business py-100">
       <h3 class="center h_title white">How to Collaborate</h3>
       <br />
-      <p class="text_highlight curr_p white">
+      <p class="text_highlight curr_p white center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
         itaque, voluptatem corporis eos, perferendis eligendi expedita nihil
         nostrum recusandae minus, id eaque ullam sint deleniti beatae hic soluta
@@ -114,8 +114,8 @@
       </div>
     </div>
 
-    <div>
-      <div class="section py-100">
+    <div class="py-70">
+      <div class="section">
         <h3 class="center h_title">Collaborate with Us</h3>
         <p class="text_highlight center mt-20">
           Complete the form below to get started with Collaborating with us
@@ -204,17 +204,51 @@
               </el-col>
             </el-row>
 
-            <div></div>
+            <div class="center mt-20">
+              <el-button class="sub_btn">SUBMIT</el-button>
+            </div>
           </el-form>
         </div>
       </div>
+    </div>
+
+    <div class="full_width bg_callUs py-70">
+      <div class="center">
+        <h3 class="h_title white mob_mt">I just want to Donate</h3>
+        <p class="donate_p mt-20">
+          When you donate to Skill Embassy you help people learn new skillsand
+          provide for thier families. You also help us create new resources for
+          you to use to expand your own technology skills. Your $5 donation will
+          provide 250 hours of learning to people around the world each month.
+        </p>
+      </div>
+
+      <div class="mt-40 d-flex justify_center">
+        <el-button
+          plain
+          type="primary"
+          icon="el-icon-edit-outline"
+          @click="applyCourse"
+        >
+          <b>DONATE NOW</b></el-button
+        >
+      </div>
+    </div>
+
+    <div class="full-width bg_footer">
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer.vue';
+
 export default {
   name: 'ForBusiness',
+  components: {
+    Footer,
+  },
   data() {
     return {
       collaborate: {
@@ -270,5 +304,22 @@ export default {
 .collaborate_form {
   margin: 40px auto;
   width: 85%;
+
+  .sub_btn {
+    width: 50%;
+  }
+}
+
+.donate_h {
+  font-size: 1.8rem;
+  color: rgb(224, 223, 223);
+}
+.donate_p {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: rgb(224, 223, 223);
+  line-height: 32px;
 }
 </style>

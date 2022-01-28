@@ -2,7 +2,7 @@
   <div class="section py-100">
     <el-row :gutter="20">
       <el-col :xs="24" :sm="24" :md="12">
-        <div class="white mt-20">
+        <div class="white mt-20 mob_pt">
           Skill Embassy
           <p class="white px-10 mt-10">
             Skill Embassy empowers and prepares product managers, product
@@ -11,7 +11,7 @@
           </p>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="12">
+      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
         <div class="d-flex justify-evenly">
           <el-input
             v-model="email"
@@ -45,7 +45,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="5">
+      <el-col :xs="24" :sm="24" :md="5" class="mob_mt">
         <div class="footer_content">
           <h4>Courses</h4>
           <ul class="mt-20">
@@ -58,7 +58,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="4">
+      <el-col :xs="24" :sm="24" :md="4" class="mob_mt">
         <div class="footer_content">
           <h4>Help</h4>
           <ul class="mt-20">
@@ -69,7 +69,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="4">
+      <el-col :xs="24" :sm="24" :md="4" class="mob_mt">
         <div class="footer_content">
           <h4>Refund Policy</h4>
           <ul class="mt-20">
@@ -108,7 +108,7 @@ export default {
 .footer_content {
   h4 {
     font-family: PoppinsMedium;
-    font-size: 15px;
+    font-size: 1rem;
     color: rgb(148, 147, 147);
   }
 

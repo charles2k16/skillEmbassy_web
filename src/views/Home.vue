@@ -18,11 +18,11 @@
       <Courses />
     </div>
 
-    <div class="full_width bg_business">
+    <div class="full_width bg_business py-70">
       <HowItWorks />
     </div>
 
-    <div class="full_width bg_testimony">
+    <div class="full_width bg_testimony py-70">
       <Collaborate />
     </div>
 
@@ -35,15 +35,16 @@
         <h3 class="callUs_h3 mt-20">SPEAK TO A LEARNING ADVISOR</h3>
       </div>
 
-      <div class="mt-40 d-flex justify_center">
-        <el-button plain type="primary" icon="el-icon-phone "
+      <div class="mt-40 d-flex justify_center flex_wrap">
+        <el-button plain type="primary" icon="el-icon-phone"
           ><a
             href="https://calendly.com/skillembassy/consultation"
             target="_blank"
             >SCHEDULE A 1:1 CALL</a
           >
         </el-button>
-        <el-button plain type="primary" icon="el-icon-phone ">
+
+        <el-button plain type="primary" icon="el-icon-phone" class="mob_mt">
           JOIN A Q&A SESSION</el-button
         >
       </div>
@@ -53,15 +54,15 @@
       <OurMentors />
     </div>
 
-    <div class="full_width bg_testimony">
+    <div class="full_width bg_testimony py-100">
       <Testimonies />
     </div>
 
-    <div class="full_width bg_business">
+    <div class="full_width bg_business py-100">
       <ForBusiness />
     </div>
 
-    <div class="full_width bg_white">
+    <div class="full_width bg_white py-100">
       <Faqs />
     </div>
 

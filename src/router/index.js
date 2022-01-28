@@ -6,6 +6,7 @@ import About from '@/views/About.vue';
 import Blog from '@/views/Blog.vue';
 import Application from '@/views/Application.vue';
 import ForBusiness from '@/views/ForBusiness.vue';
+import OurStory from '@/views/OurStory.vue';
 
 import Product_management from '@/views/courses/Product_management';
 import Product_design from '@/views/courses/Product_design';
@@ -40,6 +41,11 @@ const routes = [
     path: '/business',
     name: 'business',
     component: ForBusiness,
+  },
+  {
+    path: '/story',
+    name: 'story',
+    component: OurStory,
   },
   {
     path: '/courses/:dev_ops?',

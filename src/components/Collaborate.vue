@@ -1,5 +1,5 @@
 <template>
-  <div class="section py-150">
+  <div class="section">
     <el-row :gutter="50">
       <el-col :xs="24" :sm="24" :md="12">
         <div>
@@ -21,7 +21,7 @@
           >
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="12">
+      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
         <div>
           <img
             src="../assets/images/collaborate-with-us.png"

@@ -1,8 +1,8 @@
 <template>
-  <div class="section py-150">
+  <div class="section">
     <el-row :gutter="50">
       <el-col :xs="24" :sm="24" :md="10">
-        <div>
+        <div class="testimony_title">
           <h2>
             What Some <br />
             Students Say <br />
@@ -12,7 +12,7 @@
         </div>
       </el-col>
       <el-col :xs="24" :sm="24" :md="14">
-        <el-carousel height="420px">
+        <el-carousel height="520px">
           <el-carousel-item>
             <div class="testimony_divX">
               <i class="el-icon-chat-dot-square"></i>
@@ -109,6 +109,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.testimony_title {
+  margin-top: 100px;
+}
 .testimony_divX {
   border-style: solid;
   border-width: 0px 0px 0px 0px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="section py-70 center">
+  <div class="section center">
     <h2 class="white">How The Admission Process Works</h2>
     <p class="text_highlight white hiw_p">
       How The Admission Process Works: Joining our learning community and
