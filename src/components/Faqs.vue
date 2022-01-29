@@ -1,5 +1,5 @@
 <template>
-  <div class="section py-100">
+  <div class="section">
     <el-row :gutter="20">
       <el-col :xs="24" :sm="24" :md="12">
         <div>

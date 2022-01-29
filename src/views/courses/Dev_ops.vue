@@ -3,10 +3,10 @@
     <div class="course_page_header">
       <div class="section py-100">
         <el-row :gutter="50">
-          <el-col :xs="24" :sm="24" :md="10">
+          <el-col :xs="24" :sm="24" :md="10" class="mob_mt">
             <h3 class="course_hd">Start Your Career As A DevOps Engineer</h3>
             <p class="mt-20 text_highlight">
-              Learnn the step by step method of creating, deploying and
+              Learn the step by step method of creating, deploying and
               automating infrastructures directly from the leaders who have been
               there and done that.
             </p>
@@ -19,7 +19,7 @@
             >
           </el-col>
 
-          <el-col :xs="24" :sm="24" :md="14">
+          <el-col :xs="24" :sm="24" :md="14" class="mob_mt">
             <div class="d-flex-align-center">
               <img
                 src="../../assets/images/gifs/devops.gif"
@@ -37,7 +37,7 @@
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">
-          <el-col :xs="12" :sm="12" :md="6">
+          <el-col :xs="24" :sm="24" :md="6">
             <div class="program_div">
               <div class="program">Software Developers</div>
               <p class="px-0 mt-10">
@@ -46,7 +46,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="6">
+          <el-col :xs="24" :sm="24" :md="6">
             <div class="program_div">
               <div class="program">System Administrators</div>
               <p class="px-0 mt-10">
@@ -55,7 +55,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="6">
+          <el-col :xs="24" :sm="24" :md="6">
             <div class="program_div">
               <div class="program">Network Engineesr</div>
               <p class="px-0 mt-10">
@@ -64,7 +64,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="6">
+          <el-col :xs="24" :sm="24" :md="6">
             <div class="program_div">
               <div class="program">Cloud Engineesr</div>
               <p class="px-0 mt-10">
@@ -73,7 +73,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="6">
+          <el-col :xs="24" :sm="24" :md="6">
             <div class="program_div">
               <div class="program">Testing Engineesr/QA</div>
               <p class="px-0 mt-10">
@@ -106,7 +106,7 @@
             :name="`${index++}`"
           >
             <template slot="title">
-              <span class="step_num mr-1">{{ index++ }}</span
+              <span class="step_num mr-1">Week {{ index++ }}</span
               >{{ curr.name }}
             </template>
             <div>
@@ -121,13 +121,13 @@
       <div>
         <h3 class="center h_title white">Recomended Schedule</h3>
         <div class="d-flex-center">
-          <p class="mt-40 text_highlight white">
-            Schedule based on follwing assumptions:
+          <p class="mt-40 text_highlight white px-20">
+            * Schedule based on follwing assumptions:
             <br />
-            10 - 15 hours / week either software development or operations
+            * 10 - 15 hours / week either software development or operations
             background.
             <br />
-            Work along the demos and do excercises.
+            * Work along the demos and do excercises.
           </p>
         </div>
 
@@ -156,29 +156,7 @@
       </div>
     </div>
 
-    <!-- <div class="py-70">
-      <h3 class="center h_title">Prequisites</h3>
-      <div class="section preq">
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="full_width bg_business">
+    <div class="full_width bg_business py-70">
       <HowItWorks />
       <div class="d-flex justify_center">
         <div class="advisor_div">
@@ -192,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="full_width bg_white">
+    <div class="full_width bg_white py-70">
       <Faqs />
     </div>
 
@@ -205,11 +183,7 @@
       </div>
 
       <div class="mt-40 d-flex justify_center">
-        <el-button
-          type="danger"
-          icon="el-icon-edit-outline"
-          @click="applyCourse('dev_ops')"
-        >
+        <el-button icon="el-icon-edit-outline" @click="applyCourse('dev_ops')">
           <b>APPLY NOW</b></el-button
         >
       </div>
@@ -240,22 +214,22 @@ export default {
       // activeCurr: ['1'],
       curriculum: [
         {
-          name: 'Introduction to DevOps (Week 1)',
+          name: 'Introduction to DevOps',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'Operating Systems and Linux basics (Week 2)',
+          name: 'Operating Systems and Linux basics',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'Version Control with Git (Week 3)',
+          name: 'Version Control with Git',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'Build and Packagee Manager Tools (Week 4)',
+          name: 'Build and Packagee Manager Tools',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
@@ -270,17 +244,17 @@ export default {
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'Containers with Docker(Week 7-8)',
+          name: 'Containers with Docker',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'Build Automation - CI/CD with Jenkins (Week 9-10)',
+          name: 'Build Automation - CI/CD with Jenkins',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
         {
-          name: 'AWS Service (Week 11-12)',
+          name: 'AWS Service',
           description:
             ' - Devops BootCamp Overview <br /> - What is DEvOps <br /> - Roles and Responsibilities of DevOps Engineer <br /> - How DevOps fit in the whole Software Development lifecycle.',
         },
@@ -292,7 +266,8 @@ export default {
 
 <style lang="scss">
 .schedule_box {
-  width: 300px;
+  max-width: 300px;
+  width: 90%;
   border: 3px dotted #5138ce;
   padding: 20px;
   margin-right: 15px;

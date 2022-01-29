@@ -3,7 +3,7 @@
     <div class="course_page_header">
       <div class="section py-100">
         <el-row :gutter="50">
-          <el-col :xs="24" :sm="24" :md="12">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <h3 class="white course_hd">
               Start Your Career As A Data Scientist
             </h3>
@@ -16,11 +16,11 @@
               type="primary"
               class="mt-20"
               @click="applyCourse('data_science')"
-              >Talk to a Learning Advisor</el-button
+              >Apply Now</el-button
             >
           </el-col>
 
-          <el-col :xs="24" :sm="24" :md="12">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
                 src="../../assets/images/gifs/data-science.gif"
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="section py-100">
+    <div class="section py-100 mob_mt">
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">
@@ -115,7 +115,7 @@
       </div>
     </div>
 
-    <div class="full_width bg_business">
+    <div class="full_width bg_business py-70">
       <HowItWorks />
       <div class="d-flex justify_center">
         <div class="advisor_div">
@@ -124,12 +124,12 @@
             schedule a conversation with a learning advisor.
           </p>
           <el-button class="mt-20" type="primary"
-            >Talk to a Learning Advisor</el-button
-          >
+            >Talk to a Learning Advisor
+          </el-button>
         </div>
       </div>
     </div>
-    <div class="full_width bg_white">
+    <div class="full_width bg_white py-70">
       <Faqs />
     </div>
 
@@ -143,7 +143,6 @@
 
       <div class="mt-40 d-flex justify_center">
         <el-button
-          type="danger"
           icon="el-icon-edit-outline"
           @click="applyCourse('data_science')"
         >

@@ -4,7 +4,6 @@
   --primary_yellow: #e5c13a;
   --sec_yellow: #ffd741;
 }
-
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins-ExtraBold.ttf');
@@ -144,10 +143,6 @@ a {
 .pt-70 {
   padding-top: 70px;
 }
-/* .pl-20 {
-  padding-left: 20px;
-  padding-right: 20px;
-} */
 
 .full_width {
   width: 100%;
@@ -361,7 +356,7 @@ a {
 }
 .advisor_div {
   max-width: 650px;
-  width: 100%;
+  width: 90%;
   padding: 20px;
   border: 1px solid rgb(54, 54, 54);
   border-radius: 10px;
@@ -379,7 +374,8 @@ a {
 }
 .curriculum {
   max-width: 830px;
-  width: 100%;
+  width: 90%;
+  justify-content: center;
 }
 
 .curriculum .el-collapse-item__header {

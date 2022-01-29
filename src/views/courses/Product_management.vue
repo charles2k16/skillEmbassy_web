@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="course_page_header">
-      <div class="section py-100">
+      <div class="section py-70">
         <el-row :gutter="50">
-          <el-col :xs="12" :sm="12" :md="12">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <h3 class="white course_hd">Become A Digital Product Manager</h3>
             <p class="mt-40 text_highlight">
-              Learn the step by step method of creating managingand growing
+              Learn the step by step method of creating managing and growing
               successful products, directly from the leaders who have been there
               and done that.
             </p>
@@ -18,7 +18,7 @@
             >
           </el-col>
 
-          <el-col :xs="12" :sm="12" :md="12">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
                 src="../../assets/images/gifs/produt-management.gif"
@@ -35,7 +35,7 @@
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Professionals</div>
               <p class="px-0 mt-10">
@@ -45,7 +45,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">Entrepreneurs</div>
               <p class="px-0 mt-10">
@@ -55,7 +55,7 @@
               </p>
             </div>
           </el-col>
-          <el-col :xs="12" :sm="12" :md="8">
+          <el-col :xs="24" :sm="24" :md="8">
             <div class="program_div">
               <div class="program">"Serious" Freshers</div>
               <p class="px-0 mt-10">
@@ -114,29 +114,8 @@
         >
       </div>
     </div>
-    <!-- <div class="py-70">
-      <h3 class="center h_title">Prequisites</h3>
-      <div class="section preq">
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-        <div class="preq_div">
-          <h3>Week 1</h3>
-          <p>Overview and Intro to DevOps</p>
-        </div>
-      </div>
-    </div> -->
 
-    <div class="full_width bg_business">
+    <div class="full_width bg_business py-70">
       <HowItWorks />
       <div class="d-flex justify_center">
         <div class="advisor_div">
@@ -150,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="full_width bg_white">
+    <div class="full_width bg_white py-70">
       <Faqs />
     </div>
 
@@ -164,7 +143,6 @@
 
       <div class="mt-40 d-flex justify_center">
         <el-button
-          type="danger"
           icon="el-icon-edit-outline"
           @click="applyCourse('product_management')"
         >

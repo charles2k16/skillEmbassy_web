@@ -7,12 +7,11 @@
       you how it works.
     </p>
 
-    <div class="mt-70">
-      <img
-        src="../assets/images/application_process.png"
-        alt="hit"
-        width="100%"
-      />
+    <div class="mt-70 howItWorksImg">
+      <img src="../assets/images/selected-admission-process.png" alt="" />
+      <img src="../assets/images/selected-admission-process1.png" alt="" />
+      <img src="../assets/images/selected-admission-process3.png" alt="" />
+      <img src="../assets/images/selected-admission-process4.png" alt="" />
     </div>
   </div>
 </template>
@@ -28,5 +27,18 @@ export default {
   max-width: 710px;
   width: 100%;
   margin: 20px auto;
+}
+
+.howItWorksImg {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  overflow-x: auto;
+  width: 100%;
+
+  img {
+    max-width: 280px;
+    width: 100%;
+  }
 }
 </style>

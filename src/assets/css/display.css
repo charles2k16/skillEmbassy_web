@@ -64,6 +64,13 @@
   .donate_p {
     width: 90% !important;
   }
+  .course_page_header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .course_hd {
+    line-height: 45px;
+  }
 }
 
 /* ----------- iPhone 12 pro max ----------- */

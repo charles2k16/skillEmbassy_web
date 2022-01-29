@@ -21,8 +21,9 @@
           <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
-                src="https://via.placeholder.com/458x300?text=Business+Image"
-                alt=""
+                src="../assets/images/business-page-heading.png"
+                alt="buss"
+                width="100%"
               />
             </div>
           </el-col>
@@ -36,8 +37,9 @@
         <el-row :gutter="50" type="flex" justify="space-between">
           <el-col :span="12" class="mob_mt">
             <img
-              src="https://via.placeholder.com/458x300?text=Business+Image"
-              alt=""
+              src="../assets/images/business-page-heading-1.png"
+              alt="bus"
+              width="100%"
             />
           </el-col>
 

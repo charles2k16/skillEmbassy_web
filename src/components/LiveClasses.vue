@@ -8,7 +8,7 @@
         </div>
       </el-col>
 
-      <el-col :xs="24" :sm="24" :md="10">
+      <el-col :xs="24" :sm="24" :md="10" class="mob_mt">
         <div>
           <el-collapse v-model="activeQuestion" accordion class="course_faq">
             <el-collapse-item name="1">
