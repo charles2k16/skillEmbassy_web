@@ -7,11 +7,19 @@
       you how it works.
     </p>
 
-    <div class="mt-70 howItWorksImg">
-      <img src="../assets/images/selected-admission-process.png" alt="" />
-      <img src="../assets/images/selected-admission-process1.png" alt="" />
-      <img src="../assets/images/selected-admission-process3.png" alt="" />
+    <div class="mt-70 hidden-sm-and-down">
+      <img
+        src="../assets/images/application_process.png"
+        alt="process"
+        width="100%"
+      />
+    </div>
+
+    <div class="mt-70 howItWorksImg hidden-md-and-up">
       <img src="../assets/images/selected-admission-process4.png" alt="" />
+      <img src="../assets/images/selected-admission-process3.png" alt="" />
+      <img src="../assets/images/selected-admission-process1.png" alt="" />
+      <img src="../assets/images/selected-admission-process.png" alt="" />
     </div>
   </div>
 </template>
@@ -32,6 +40,7 @@ export default {
 .howItWorksImg {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 25px;
   overflow-x: auto;
   width: 100%;

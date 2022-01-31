@@ -71,6 +71,10 @@
   .course_hd {
     line-height: 45px;
   }
+  .mob_90 {
+    margin: 20px auto;
+    width: 90%;
+  }
 }
 
 /* ----------- iPhone 12 pro max ----------- */

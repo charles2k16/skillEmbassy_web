@@ -4,8 +4,7 @@
       <el-col :xs="24" :sm="24" :md="12">
         <div>
           <h2>
-            Frequently Asked <br />
-            Questions ?
+            {{title}}
           </h2>
           <p class="mt-20 text_highlight">
             Not sure how Skill Embassy can help you? Wonder why you need the tech Skills and 
@@ -123,6 +122,12 @@ But don't be concerned; we're here to assist you.
 <script>
 export default {
   name: 'Faqs',
+  props: {
+    title: {
+      type: String,
+      default: 'Frequently Asked Questions?'
+    }
+  }
 }
 </script>
 

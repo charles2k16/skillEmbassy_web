@@ -49,6 +49,11 @@ export default {
 .hero_wrapper {
   padding: 20px 10px 20px 5px;
 
+  h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
   p {
     max-width: 450px;
     width: 100%;

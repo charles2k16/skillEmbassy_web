@@ -5,10 +5,12 @@
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
             <p class="business_p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              reprehenderit harum recusandae aperiam error amet rerum
-              necessitatibus hic, sed earum sint voluptas cupiditate, accusamus
-              quos quia debitis, veritatis maiores corporis!
+              At Skill Embassy our mission is to enable individuals to be at the
+              forefront of the technology revolution by empowering them with the
+              skills required to apply technical expertise to various
+              businesses. Skill Embassy is looking for Sponsors that want to be
+              a part of the burgeoning technological transformation that is now
+              take place.
             </p>
             <el-button
               type="primary"
@@ -46,10 +48,10 @@
           <el-col :span="12">
             <div class="mt-40">
               <p class="business_p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                rerum esse corporis ex doloremque facere, ut amet. Ex, eius
-                deleniti quaerat repellendus harum aperiam dicta doloremque
-                expedita beatae quia ipsum!
+                Innovate, Empower, Grow We empower teams to adopt new technology
+                and techniques that put your company in a competitive advantage.
+                Keep your growing organization aligned on current business
+                strategies.
               </p>
             </div>
           </el-col>
@@ -61,10 +63,9 @@
       <h3 class="center h_title white">How to Collaborate</h3>
       <br />
       <p class="text_highlight curr_p white center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        itaque, voluptatem corporis eos, perferendis eligendi expedita nihil
-        nostrum recusandae minus, id eaque ullam sint deleniti beatae hic soluta
-        quaerat natus.
+        How To Collaborate: You can help the excellent cause we're working on in
+        a variety of ways. Join us as we develop excellent talent to drive
+        innovation forward.
       </p>
 
       <div class="section mt-40">
@@ -73,10 +74,10 @@
             <div class="program_div bordered_div">
               <div class="program spon">Become a Sponsor</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                Directly assist a student in gaining the chance to learn or
+                sponsor one of our programs targeted at empowering individuals
+                to obtain a job that will allow them to care for themselves and
+                their family.
               </p>
 
               <el-button class="mt-20" icon="el-icon-money">
@@ -88,10 +89,9 @@
             <div class="program_div bordered_div">
               <div class="program part">Become our Partner</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                We encourage you to join us in creating the finest environment
+                possible for learners to get real-world work experience and be
+                prepared for the job market.
               </p>
               <el-button class="mt-20" icon="el-icon-money">
                 <b>Collaborate With Us</b></el-button
@@ -102,10 +102,9 @@
             <div class="program_div bordered_div">
               <div class="program pool">Hire from our Talent Pool</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                Hire from Our Talent Pool: Hire from our talent pool of
+                candidates who will help your firm in growing and achieving its
+                long-term goals.
               </p>
               <el-button class="mt-20" icon="el-icon-money" plain>
                 <b>Collaborate With Us</b></el-button
@@ -277,6 +276,10 @@ export default {
   background: #02172c;
   border-radius: 10px;
   padding: 20px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .program {
     border-radius: 5px;
