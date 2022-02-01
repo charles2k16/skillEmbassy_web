@@ -70,25 +70,7 @@
       <BlogLists />
     </div> -->
 
-    <div class="full_width bg_callUs py-100">
-      <div class="center">
-        <p class="callUs_p">Ready to change your your life?</p>
-        <h3 class="callUs_h3 mt-20">
-          Take the next step & apply to Skill Embassy.
-        </h3>
-      </div>
-
-      <div class="mt-40 d-flex justify_center">
-        <el-button
-          plain
-          type="primary"
-          icon="el-icon-edit-outline"
-          @click="applyCourse"
-        >
-          <b>APPLY NOW</b></el-button
-        >
-      </div>
-    </div>
+    <Apply />
 
     <div class="full-width bg_footer">
       <Footer />
@@ -107,6 +89,7 @@ import HowItWorks from '../components/HowItWorks.vue';
 import OurMentors from '../components/OurMentors.vue';
 import Testimonies from '../components/Testimonies.vue';
 import WhyUs from '../components/WhyUs.vue';
+import Apply from '../components/Apply.vue';
 
 export default {
   name: 'Home',
@@ -121,6 +104,7 @@ export default {
     HowItWorks,
     Footer,
     Courses,
+    Apply,
   },
 };
 </script>

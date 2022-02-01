@@ -47,7 +47,7 @@ h1 {
   color: #1c1e27;
 }
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   line-height: 55px;
   font-family: PoppinsBold;
   color: #1c1e27;
@@ -210,6 +210,9 @@ a {
 }
 .bg_light {
   background: #ececfb;
+}
+.bg_story {
+  background: #e1e0f7;
 }
 /* .curr_bg {
   background-image: url('../images/Blue.png');

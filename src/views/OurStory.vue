@@ -2,32 +2,32 @@
   <div>
     <div class="course_page_header py-70">
       <div class="section">
-        <p class="story_p center">
-          Now that you're here at Skill Embassy, you are part of us. This
-          booklet will introduce you to the important inside story so that you
-          can keep them in mind while you work.
-        </p>
-        <br />
-        <br />
-        <div class="mt-70">
+        <div class="">
           <el-row :gutter="50">
             <el-col :xs="24" :sm="24" :md="12">
-              <div class="d-flex-align-center">
-                <img
-                  src="https://via.placeholder.com/458x300?text=Business+Image"
-                  alt=""
-                />
-              </div>
-            </el-col>
-
-            <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
               <br />
               <p class="story_p mt-40">
                 We empower and prepare product managers, product designers, and
                 software developers for success within the tech industry.
               </p>
             </el-col>
+
+            <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
+              <div class="d-flex-align-center">
+                <img
+                  src="../assets/images/our-story.png"
+                  alt="img"
+                  width="100%"
+                />
+              </div>
+            </el-col>
           </el-row>
+          <br /><br />
+          <p class="story_p center">
+            Now that you're here at Skill Embassy, you are part of us. This
+            booklet will introduce you to the important inside story so that you
+            can keep them in mind while you work.
+          </p>
         </div>
       </div>
     </div>
@@ -36,8 +36,9 @@
       <h3 class="center h_title white">Who We Are</h3>
       <br />
       <p class="text_highlight curr_p white center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        itaque, voluptatem corporis eos, perferendis eligendi expedita nihil
+        We are an inclusive community and the only Product Accelerators in the
+        job market democratizing innovation for Aspiring Product Managers,
+        Builders, and Side Hustlers.
       </p>
 
       <div class="section mt-40">
@@ -46,10 +47,10 @@
             <div class="program_div mob_90">
               <div class="program spon">An Inclusive Community</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                We go to great lengths to ensure that all students and
+                collaborators are respected. We advocate for fairness and
+                opportunity. Skill Embassy strives to include all stakeholders
+                in decision-making processes that impact their lives.
               </p>
             </div>
           </el-col>
@@ -57,10 +58,7 @@
             <div class="program_div mob_90">
               <div class="program part">We Empower Product teams</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                We empower you learn , upskill and launch successful products.
               </p>
             </div>
           </el-col>
@@ -68,10 +66,8 @@
             <div class="program_div mob_90">
               <div class="program pool">Our ultimate goal</div>
               <p class="px-0 mt-20 white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                iure, ea fuga consectetur amet magni voluptatum asperiores
-                facilis eos quibusdam consequatur ipsam minus neque cupiditate
-                nemo architecto? Expedita, nemo enim!
+                Our ultimate goal is to empower technologists from all
+                backgrounds to succeed within the tech industry.
               </p>
             </div>
           </el-col>
@@ -83,7 +79,7 @@
       <Faqs title="Why Choose Skill Embassy" />
     </div>
 
-    <div class="section">
+    <div class="section py-70">
       <div class="profiles_wrapper">
         <div class="profile course_div">
           <el-avatar
@@ -146,16 +142,102 @@
         </div>
       </div>
     </div>
+
+    <div class="bg_story">
+      <div class="section_story">
+        <el-row :gutter="10">
+          <el-col :xs="24" :sm="24" :md="10">
+            <h3>When We Make Deals</h3>
+          </el-col>
+          <el-col :xs="24" :sm="24" :md="14">
+            <div>
+              <div class="deals">
+                <h3>DO</h3>
+                <p class="mt-20 text_highlight">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+
+              <div class="mt-40 deals">
+                <h3>DON'T</h3>
+                <p class="mt-20 text_highlight">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+
+        <el-row :gutter="10" class="mt-70">
+          <el-col :xs="24" :sm="24" :md="10">
+            <h3>When We Make Products</h3>
+          </el-col>
+          <el-col :xs="24" :sm="24" :md="14">
+            <div>
+              <div class="deals">
+                <h3>DO</h3>
+                <p class="mt-20 text_highlight">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+
+              <div class="mt-40 deals">
+                <h3>DON'T</h3>
+                <p class="mt-20 text_highlight">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+
+    <div class="full_width bg_business py-70">
+      <HowItWorks />
+      <div class="d-flex justify_center">
+        <div class="advisor_div">
+          <p>
+            Would you like to know more? Our admission consultants can help you
+            schedule a conversation with a learning advisor.
+          </p>
+          <el-button class="mt-20" type="primary"
+            >Talk to a Learning Advisor
+          </el-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="full_width bg_testimony py-70">
+      <Collaborate />
+    </div>
+
+    <Apply />
+    <div class="full-width bg_footer">
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
 import Faqs from '@/components/Faqs';
+import HowItWorks from '@/components/HowItWorks';
+import Collaborate from '@/components/Collaborate';
+import Footer from '@/components/Footer';
+import Apply from '@/components/Apply';
 
 export default {
   name: 'OurStory',
   components: {
     Faqs,
+    HowItWorks,
+    Footer,
+    Apply,
+    Collaborate,
   },
 };
 </script>
@@ -166,7 +248,7 @@ export default {
   line-height: 36px;
   max-width: 800px;
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .profiles_wrapper {
@@ -217,6 +299,17 @@ export default {
         }
       }
     }
+  }
+}
+
+.section_story {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 10px;
+
+  h3 {
+    font-size: 1.3rem;
   }
 }
 </style>
