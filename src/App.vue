@@ -13,46 +13,56 @@
           </el-col>
 
           <el-col :xs="14" :sm="14" :md="13">
-            <el-dropdown class="hidden-md-and-up mobile_dropdown">
+            <el-dropdown
+              class="hidden-md-and-up mobile_dropdown"
+              :hide-on-click="false"
+              trigger="click"
+            >
               <span class="el-dropdown-link">
                 <i class="el-icon-menu"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
                 <el-dropdown-item>
-                  <el-menu
-                    :default-active="activeIndex"
-                    class="el-menu-demo hidden-sm-and-down"
-                    mode="vertical"
-                    router
-                  >
-                    <el-submenu index="1">
-                      <template slot="title">Courses</template>
-                      <el-menu-item
-                        index="1"
+                  <div class="dropdown_mob">
+                    <!-- The trigger element -->
+                    <span @click="showDropdown = !showDropdown"
+                      >View Courses
+                      <i class="el-icon-arrow-down el-icon--right"></i
+                    ></span>
+
+                    <!-- The content -->
+                    <div class="mt-10" v-show="showDropdown">
+                      <span
                         @click="viewCourse('product_management')"
-                        >Product Management</el-menu-item
+                        class="d-block dd_menu"
+                        >Product Management</span
                       >
-                      <el-menu-item
-                        index="1-2"
+
+                      <span
                         @click="viewCourse('product_design')"
-                        >Product Design</el-menu-item
+                        class="d-block dd_menu"
+                        >Product Design</span
                       >
-                      <el-menu-item
-                        index="1-3"
+
+                      <span
                         @click="viewCourse('software_dev')"
-                        >Software Development</el-menu-item
+                        class="d-block dd_menu"
+                        >Software Development</span
                       >
-                      <el-menu-item index="1-4" @click="viewCourse('dev_ops')"
-                        >DevOps Engineer</el-menu-item
+                      <span
+                        @click="viewCourse('dev_ops')"
+                        class="d-block dd_menu"
+                        >DevOps Engineer</span
                       >
-                      <el-menu-item
-                        index="1-5"
+                      <span
                         @click="viewCourse('data_science')"
-                        >Data Science</el-menu-item
+                        class="d-block dd_menu mb-10"
+                        >Data Science</span
                       >
-                    </el-submenu>
-                  </el-menu>
+                    </div>
+                  </div>
                 </el-dropdown-item>
+
                 <el-dropdown-item>
                   <span @click="$router.push('/blog')"> Blog </span>
                 </el-dropdown-item>
@@ -125,7 +135,7 @@
         </el-row>
       </div>
     </el-header>
-    <el-main>
+    <el-main class="page-component__scroll el-scrollbar__wrap">
       <router-view />
     </el-main>
   </el-container>
@@ -136,6 +146,7 @@ export default {
   data() {
     return {
       activeIndex: '1',
+      showDropdown: false,
     };
   },
   methods: {},
@@ -160,5 +171,10 @@ export default {
 }
 .el-icon-menu {
   font-size: 25px;
+}
+
+.dd_menu {
+  font-size: 15px;
+  margin-top: 15px;
 }
 </style>

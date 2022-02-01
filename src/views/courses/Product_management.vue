@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="section py-100">
+    <div class="section py-100 mob_mt">
       <div class="course_detail">
         <h2>The program is best suited for</h2>
         <el-row :gutter="20">

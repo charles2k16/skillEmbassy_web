@@ -1,16 +1,14 @@
 <template>
   <div>
     <div class="course_page_header">
-      <div class="section py-100">
+      <div class="section py-100 mob_mt">
         <el-row :gutter="50">
           <el-col :xs="24" :sm="24" :md="12">
+            <h3 class="bus_head">Innovate, Empower, Grow</h3>
             <p class="business_p">
-              At Skill Embassy our mission is to enable individuals to be at the
-              forefront of the technology revolution by empowering them with the
-              skills required to apply technical expertise to various
-              businesses. Skill Embassy is looking for Sponsors that want to be
-              a part of the burgeoning technological transformation that is now
-              take place.
+              We empower teams to adopt new technology and techniques that put
+              your company in a competitive advantage. Keep your growing
+              organization aligned on current business strategies.
             </p>
             <el-button
               type="primary"
@@ -45,13 +43,15 @@
             />
           </el-col>
 
-          <el-col :span="12">
-            <div class="mt-40">
+          <el-col :span="12" class="mob_mt">
+            <div>
               <p class="business_p">
-                Innovate, Empower, Grow We empower teams to adopt new technology
-                and techniques that put your company in a competitive advantage.
-                Keep your growing organization aligned on current business
-                strategies.
+                At Skill Embassy our mission is to enable individuals to be at
+                the forefront of the technology revolution by empowering them
+                with the skills required to apply technical expertise to various
+                businesses. Skill Embassy is looking for Sponsors that want to
+                be a part of the burgeoning technological transformation that is
+                now take place.
               </p>
             </div>
           </el-col>
@@ -63,9 +63,8 @@
       <h3 class="center h_title white">How to Collaborate</h3>
       <br />
       <p class="text_highlight curr_p white center">
-        How To Collaborate: You can help the excellent cause we're working on in
-        a variety of ways. Join us as we develop excellent talent to drive
-        innovation forward.
+        You can help the excellent cause we're working on in a variety of ways.
+        Join us as we develop excellent talent to drive innovation forward.
       </p>
 
       <div class="section mt-40">
@@ -269,6 +268,12 @@ export default {
 .business_p {
   font-size: 1.5rem;
   line-height: 35px;
+}
+.bus_head {
+  font-size: 1.8rem;
+  line-height: 50px;
+  font-family: PoppinsBold;
+  color: #1c1e27;
 }
 
 .bordered_div {

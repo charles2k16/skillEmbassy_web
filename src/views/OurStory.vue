@@ -6,10 +6,10 @@
           <el-row :gutter="50">
             <el-col :xs="24" :sm="24" :md="12">
               <br />
-              <p class="story_p mt-40">
+              <h2 class="story_p mt-20">
                 We empower and prepare product managers, product designers, and
                 software developers for success within the tech industry.
-              </p>
+              </h2>
             </el-col>
 
             <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
@@ -23,7 +23,7 @@
             </el-col>
           </el-row>
           <br /><br />
-          <p class="story_p center">
+          <p class="story_p_bold center">
             Now that you're here at Skill Embassy, you are part of us. This
             booklet will introduce you to the important inside story so that you
             can keep them in mind while you work.
@@ -73,10 +73,6 @@
           </el-col>
         </el-row>
       </div>
-    </div>
-
-    <div class="py-100">
-      <Faqs title="Why Choose Skill Embassy" />
     </div>
 
     <div class="section py-70">
@@ -149,7 +145,7 @@
           <el-col :xs="24" :sm="24" :md="10">
             <h3>When We Make Deals</h3>
           </el-col>
-          <el-col :xs="24" :sm="24" :md="14">
+          <el-col :xs="24" :sm="24" :md="14" class="mob_mt">
             <div>
               <div class="deals">
                 <h3>DO</h3>
@@ -174,7 +170,7 @@
           <el-col :xs="24" :sm="24" :md="10">
             <h3>When We Make Products</h3>
           </el-col>
-          <el-col :xs="24" :sm="24" :md="14">
+          <el-col :xs="24" :sm="24" :md="14" class="mob_mt">
             <div>
               <div class="deals">
                 <h3>DO</h3>
@@ -224,7 +220,6 @@
 </template>
 
 <script>
-import Faqs from '@/components/Faqs';
 import HowItWorks from '@/components/HowItWorks';
 import Collaborate from '@/components/Collaborate';
 import Footer from '@/components/Footer';
@@ -233,7 +228,6 @@ import Apply from '@/components/Apply';
 export default {
   name: 'OurStory',
   components: {
-    Faqs,
     HowItWorks,
     Footer,
     Apply,
@@ -244,8 +238,17 @@ export default {
 
 <style lang="scss" scoped>
 .story_p {
+  font-size: 1.7rem;
+  line-height: 45px;
+  max-width: 800px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.story_p_bold {
   font-size: 1.6rem;
-  line-height: 36px;
+  font-family: PoppinsMedium;
+  line-height: 40px;
   max-width: 800px;
   width: 90%;
   margin: 50px auto;
