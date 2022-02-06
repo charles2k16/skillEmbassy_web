@@ -15,7 +15,7 @@
             <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
               <div class="d-flex-align-center">
                 <img
-                  src="../assets/images/our-story.png"
+                  src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
                   alt="img"
                   width="100%"
                 />

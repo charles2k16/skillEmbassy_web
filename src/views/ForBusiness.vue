@@ -21,7 +21,7 @@
           <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
-                src="../assets/images/business-page-heading.png"
+                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/business-page-heading.png"
                 alt="buss"
                 width="100%"
               />
@@ -37,7 +37,7 @@
         <el-row :gutter="50" type="flex" justify="space-between">
           <el-col :span="12" class="mob_mt">
             <img
-              src="../assets/images/business-page-heading-1.png"
+              src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/business-page-heading-1.png"
               alt="bus"
               width="100%"
             />

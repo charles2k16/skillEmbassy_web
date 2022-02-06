@@ -4,7 +4,11 @@
       <el-col :xs="24" :sm="24" :md="2"> .</el-col>
       <el-col :xs="24" :sm="24" :md="10">
         <div>
-          <img src="../assets/images/live-classes.png" alt="gif" width="100%" />
+          <img
+            src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/live-classes.png"
+            alt="gif"
+            width="100%"
+          />
         </div>
       </el-col>
 

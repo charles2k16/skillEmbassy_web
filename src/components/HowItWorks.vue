@@ -8,17 +8,29 @@
 
     <div class="mt-70 hidden-sm-and-down">
       <img
-        src="../assets/images/application_process.png"
+        src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/application_process.png"
         alt="process"
         width="100%"
       />
     </div>
 
     <div class="mt-70 howItWorksImg hidden-md-and-up">
-      <img src="../assets/images/selected-admission-process4.png" alt="" />
-      <img src="../assets/images/selected-admission-process3.png" alt="" />
-      <img src="../assets/images/selected-admission-process1.png" alt="" />
-      <img src="../assets/images/selected-admission-process.png" alt="" />
+      <img
+        src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/selected-admission-process4.png"
+        alt=""
+      />
+      <img
+        src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/selected-admission-process3.png"
+        alt=""
+      />
+      <img
+        src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/selected-admission-process1.png"
+        alt=""
+      />
+      <img
+        src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/selected-admission-process.png"
+        alt=""
+      />
     </div>
   </div>
 </template>

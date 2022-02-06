@@ -24,7 +24,7 @@
       <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
         <div>
           <img
-            src="../assets/images/collaborate-with-us.png"
+            src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/collaborate-with-us.png"
             alt="coll"
             width="100%"
           />
