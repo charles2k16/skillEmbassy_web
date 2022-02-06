@@ -81,7 +81,7 @@ export default {
         {
           title: 'Software Engineering',
           slug: 'software_dev',
-          desc: 'Reduce software development times to get ahead of the competition with DevOps.',
+          desc: 'Based on specs, create efficient code in an agile environment, work with product team members, test and deploy applications and systems',
           topics: [
             'FrontEnd',
             'Backend Dev',
@@ -124,9 +124,9 @@ export default {
         {
           title: 'Data Science',
           slug: 'data_science',
-          desc: ' Product Managers mission is to look at the market and understand what users wish',
+          desc: 'Learn how to import, clean, modify, and visualize data, which are all essential skills for any aspiring data professional or researcher.',
           topics: [
-            'Foundations of Data Scienc',
+            'Foundations of Data Science',
             'Data Analysis',
             'Data Visualization',
             'Machine learning',

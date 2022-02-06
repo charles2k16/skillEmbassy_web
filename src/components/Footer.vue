@@ -80,13 +80,24 @@
       </el-col>
       <el-col :xs="24" :sm="24" :md="5">
         <div class="footer_social">
-          <a><img src="../assets/images/instagram.png" alt="instagram" /></a>
-          <a><img src="../assets/images/facebook.png" alt="facebook" /></a>
-          <a><img src="../assets/images/linkedin.png" alt="linkedin" /></a>
+          <a href="https://web.facebook.com/skillembassy" target="_blank"
+            ><img src="../assets/images/instagram.png" alt="instagram"
+          /></a>
+          <a href="https://web.facebook.com/skillembassy" target="_blank"
+            ><img src="../assets/images/facebook.png" alt="facebook"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/skillembassy/"
+            target="_blank"
+            ><img src="../assets/images/linkedin.png" alt="linkedin"
+          /></a>
+          <a href="https://twitter.com/skillembassy" target="_blank"
+            ><img src="../assets/images/twitter.png" alt="twitter"
+          /></a>
         </div>
         <div class="copyright mt-20">
-          <p>Find us on Socila Media</p>
-          <p class="mt-10">Copyright © skillembassy 2021</p>
+          <p>Find us on Social Media</p>
+          <p class="mt-10">Copyright © skillembassy 2022</p>
         </div>
       </el-col>
     </el-row>

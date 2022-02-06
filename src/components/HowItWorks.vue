@@ -2,9 +2,8 @@
   <div class="section center">
     <h2 class="white">How The Admission Process Works</h2>
     <p class="text_highlight white hiw_p">
-      How The Admission Process Works: Joining our learning community and
-      becoming a member of a smart team is simple. This basic steps will teach
-      you how it works.
+      Joining our learning community and becoming a member of a smart team is
+      simple. This basic steps will teach you how it works.
     </p>
 
     <div class="mt-70 hidden-sm-and-down">

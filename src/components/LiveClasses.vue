@@ -13,7 +13,13 @@
           <el-collapse v-model="activeQuestion" accordion class="course_faq">
             <el-collapse-item name="1">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Live Classes
+                <img
+                  src="../assets/images/presentation.png"
+                  alt="ic"
+                  width="20px"
+                  class="mr-1"
+                />
+                Live Classes
               </template>
               <div>
                 <p>
@@ -28,7 +34,13 @@
             </el-collapse-item>
             <el-collapse-item name="2">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Hands-on Training
+                <img
+                  src="../assets/images/videoconference.png"
+                  alt="ic"
+                  width="17px"
+                  class="mr-1"
+                />
+                Hands-on Training
               </template>
               <div>
                 <p>
