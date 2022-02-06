@@ -28,7 +28,7 @@
         <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
           <div class="d-flex-align-center justify-right">
             <img
-              src="../assets/images/skill-embassy-head.png"
+              src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/skill-embassy-head.png"
               alt="coding school"
               width="100%"
             />
