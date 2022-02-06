@@ -49,12 +49,15 @@
         <div class="footer_content">
           <h4>Courses</h4>
           <ul class="mt-20">
-            <li>
+            <li @click="viewCourse('software_dev')">
               <b>Software Development</b>
             </li>
-            <li>Product Design</li>
-            <li>Product Management</li>
-            <li>DevOps Engineer</li>
+            <li @click="viewCourse('product_design')">Product Design</li>
+            <li @click="viewCourse('product_management')">
+              Product Management
+            </li>
+            <li @click="viewCourse('dev_ops')">DevOps Engineer</li>
+            <li @click="viewCourse('data_science')">Data Science</li>
           </ul>
         </div>
       </el-col>
@@ -62,7 +65,7 @@
         <div class="footer_content">
           <h4>Help</h4>
           <ul class="mt-20">
-            <li>About skill embassy</li>
+            <li @click="$router.push('/story')">About skill embassy</li>
             <li>Podcasts</li>
             <li>Privacy Policy</li>
             <li>Terms & Conditions</li>
@@ -74,7 +77,8 @@
           <h4>Refund Policy</h4>
           <ul class="mt-20">
             <li>Get a Refund</li>
-            <li>Become a Mentor</li>
+            <li @click="$router.push('/business')">Become a Mentor</li>
+            <li>Careers</li>
           </ul>
         </div>
       </el-col>
@@ -124,6 +128,7 @@ export default {
   }
 
   ul li {
+    cursor: pointer;
     list-style: none;
     color: rgb(240, 240, 240);
     margin: 12px 0px;

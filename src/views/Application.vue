@@ -461,7 +461,11 @@ export default {
       this.activeCourse = e;
     },
     processPayment: () => {
-      window.alert('Payment recieved');
+      this.$notify({
+        title: 'Success',
+        message: 'Your Payment has successfully been received',
+        type: 'success',
+      });
     },
     closedPaymentModal() {
       console.log('payment is closed');
