@@ -20,7 +20,9 @@
               >Apply Now</el-button
             >
             <el-button class="mt-30" size="large" type="danger" plain
-              ><a href="http://localhost:8080/#courses">View Courses</a>
+              ><a href="https://sleepy-swirles-e5aa90.netlify.app/#course"
+                >View Courses</a
+              >
             </el-button>
           </div>
         </el-col>

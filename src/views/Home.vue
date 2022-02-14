@@ -14,7 +14,7 @@
       <WhyUs />
     </div>
 
-    <div class="full_width bg_courses" id="courses">
+    <div class="full_width bg_courses" id="course">
       <Courses />
     </div>
 
