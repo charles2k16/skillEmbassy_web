@@ -78,7 +78,12 @@
           <ul class="mt-20">
             <li>Get a Refund</li>
             <li @click="$router.push('/business')">Become a Mentor</li>
-            <li>Careers</li>
+            <li>
+              <a
+                href="https://www.notion.so/GET-TO-KNOW-SKILL-EMBASSY-dbcfef6cf5904e5bb36986c1d19412f3"
+                >Careers</a
+              >
+            </li>
           </ul>
         </div>
       </el-col>

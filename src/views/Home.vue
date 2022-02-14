@@ -54,6 +54,10 @@
       <OurMentors />
     </div>
 
+    <div class="full_width mt-40 mb-40">
+      <OurPartners />
+    </div>
+
     <div class="full_width bg_testimony py-100">
       <Testimonies />
     </div>
@@ -90,6 +94,7 @@ import OurMentors from '../components/OurMentors.vue';
 import Testimonies from '../components/Testimonies.vue';
 import WhyUs from '../components/WhyUs.vue';
 import Apply from '../components/Apply.vue';
+import OurPartners from '../components/OurPartners.vue';
 
 export default {
   name: 'Home',
@@ -105,6 +110,7 @@ export default {
     Footer,
     Courses,
     Apply,
+    OurPartners,
   },
 };
 </script>

@@ -169,6 +169,11 @@ a {
 .flex_wrap {
   flex-wrap: wrap;
 }
+.d-flex-no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
 .d-flex-center {
   display: flex;
   align-items: center;
