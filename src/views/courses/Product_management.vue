@@ -170,6 +170,9 @@ export default {
     Footer,
     LiveClasses,
   },
+  created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
   data() {
     return {
       activeQuestion: ['1'],
