@@ -1,7 +1,7 @@
 <template>
   <div class="section">
-    <el-row :gutter="50">
-      <el-col :xs="24" :sm="24" :md="12">
+    <el-row :gutter="50" type="flex">
+      <el-col :span="12">
         <div>
           <h2 class="mt-20">Collaborate with us</h2>
 
@@ -21,7 +21,7 @@
           >
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
+      <el-col :span="12" class="mob_mt">
         <div>
           <img
             src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/collaborate-with-us.png"

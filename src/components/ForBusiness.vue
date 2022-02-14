@@ -2,8 +2,8 @@
   <div class="section business">
     <h1>For Businesses</h1>
 
-    <el-row :gutter="50" class="mt-70">
-      <el-col :xs="24" :sm="24" :md="12">
+    <el-row :gutter="50" type="flex" class="mt-70">
+      <el-col :span="12">
         <div class="d-flex">
           <div class="vl mr-20"></div>
           <h2>DEVELOP DIGITAL TALENT IN YOUR COMPANY</h2>
@@ -18,7 +18,7 @@
         >
       </el-col>
 
-      <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
+      <el-col :span="12" class="mob_mt">
         <div>
           <img
             src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/for-businesses.png"

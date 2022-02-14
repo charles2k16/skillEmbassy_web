@@ -28,7 +28,8 @@
       <img
         src="../assets/images/partners/apple.png"
         alt="link"
-        height="120px"
+        height="40px"
+        style="margin-top: -5px"
       />
     </div>
   </div>

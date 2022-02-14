@@ -2,8 +2,8 @@
   <div>
     <div class="course_page_header">
       <div class="section py-100 mob_mt">
-        <el-row :gutter="50">
-          <el-col :xs="24" :sm="24" :md="12">
+        <el-row :gutter="50" type="flex">
+          <el-col :span="12">
             <h3 class="bus_head">Innovate, Empower, Grow</h3>
             <p class="business_p">
               We empower teams to adopt new technology and techniques that put
@@ -18,7 +18,7 @@
             >
           </el-col>
 
-          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
+          <el-col :span="12" class="mob_mt">
             <div class="d-flex-align-center justify-right">
               <img
                 src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/business-page-heading.png"
