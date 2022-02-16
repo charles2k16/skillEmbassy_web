@@ -19,10 +19,14 @@
               @click="applyCourse('software_dev')"
               >Apply Now</el-button
             >
-            <el-button class="mt-30" size="large" type="danger" plain
-              ><a href="https://sleepy-swirles-e5aa90.netlify.app/#course"
-                >View Courses</a
-              >
+            <el-button
+              class="mt-30"
+              size="large"
+              type="danger"
+              plain
+              @click="$router.push('/all_courses')"
+            >
+              Courses
             </el-button>
           </div>
         </el-col>

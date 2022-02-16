@@ -77,9 +77,9 @@
   .section_story {
     padding: 50px 10px !important;
   }
-  /* h1 {
-    font-size: 3rem !important;
-  } */
+  .testimony_head {
+    text-align: center;
+  }
 }
 
 /* ----------- iPhone 12 pro max ----------- */

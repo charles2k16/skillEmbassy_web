@@ -12,6 +12,7 @@
           </p>
 
           <el-button
+            @click="$router.push('/business')"
             size="large"
             plain
             type="primary"

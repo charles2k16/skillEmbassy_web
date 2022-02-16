@@ -431,6 +431,7 @@ export default {
   },
   created() {
     this.activeCourse = this.$route.query.name;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
   methods: {
     nextStep() {

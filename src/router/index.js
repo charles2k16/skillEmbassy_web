@@ -2,11 +2,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import Home from '@/views/Home.vue';
-import About from '@/views/About.vue';
 import Blog from '@/views/Blog.vue';
 import Application from '@/views/Application.vue';
 import ForBusiness from '@/views/ForBusiness.vue';
 import OurStory from '@/views/OurStory.vue';
+import AllCourses from '@/views/AllCourses.vue';
 
 import Product_management from '@/views/courses/Product_management';
 import Product_design from '@/views/courses/Product_design';
@@ -21,11 +21,6 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
   },
   {
     path: '/blog',
@@ -71,6 +66,11 @@ const routes = [
     path: '/courses/:data_science?',
     name: 'data_science',
     component: Data_science,
+  },
+  {
+    path: '/all_courses',
+    name: 'all_courses',
+    component: AllCourses,
   },
 ];
 

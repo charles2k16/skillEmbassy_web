@@ -2,9 +2,9 @@
   <div>
     <div class="course_page_header py-70">
       <div class="section">
-        <div class="">
-          <el-row :gutter="50">
-            <el-col :xs="24" :sm="24" :md="12">
+        <div>
+          <el-row :gutter="50" type="flex">
+            <el-col :span="12">
               <br />
               <h2 class="story_p mt-20">
                 We empower and prepare product managers, product designers, and
@@ -12,7 +12,7 @@
               </h2>
             </el-col>
 
-            <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
+            <el-col :span="12" class="mob_mt">
               <div class="d-flex-align-center">
                 <img
                   src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <div class="section py-70">
+    <!-- <div class="section py-70">
       <div class="profiles_wrapper">
         <div class="profile course_div">
           <el-avatar
@@ -137,56 +137,82 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="bg_story">
       <div class="section_story">
-        <el-row :gutter="10">
-          <el-col :xs="24" :sm="24" :md="10">
-            <h3>When We Make Deals</h3>
-          </el-col>
-          <el-col :xs="24" :sm="24" :md="14" class="mob_mt">
-            <div>
-              <div class="deals">
-                <h3>DO</h3>
-                <p class="mt-20 text_highlight">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-              </div>
+        <h3 class="center h_title">Who We Are</h3>
 
-              <div class="mt-40 deals">
-                <h3>DON'T</h3>
-                <p class="mt-20 text_highlight">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-              </div>
+        <el-row :gutter="50" type="flex" class="mt-30">
+          <el-col :span="12">
+            <div>
+              <h3>We Grow</h3>
+              <p class="mt-10 text_highlight_p">
+                The never-ending pursuit of better solutions is central to all
+                we do. We believe in the power of collaboration, hands-on
+                learning, and creating a community where everyone can develop
+                together. Our aim to foster a learning-by-doing atmosphere
+                drives us to make the next big decision.
+              </p>
+            </div>
+          </el-col>
+
+          <el-col :span="12">
+            <div class="d-flex-align-center mt-20">
+              <img
+                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
+                alt="img"
+                width="100%"
+              />
             </div>
           </el-col>
         </el-row>
 
-        <el-row :gutter="10" class="mt-70">
-          <el-col :xs="24" :sm="24" :md="10">
-            <h3>When We Make Products</h3>
+        <el-row :gutter="50" type="flex" class="mt-70">
+          <el-col :span="12">
+            <div class="d-flex-align-center mt-20">
+              <img
+                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
+                alt="img"
+                width="100%"
+              />
+            </div>
           </el-col>
-          <el-col :xs="24" :sm="24" :md="14" class="mob_mt">
-            <div>
-              <div class="deals">
-                <h3>DO</h3>
-                <p class="mt-20 text_highlight">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-              </div>
 
-              <div class="mt-40 deals">
-                <h3>DON'T</h3>
-                <p class="mt-20 text_highlight">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-              </div>
+          <el-col :span="12" class="mob_mt">
+            <div>
+              <h3>We Innovate</h3>
+              <p class="mt-10 text_highlight_p">
+                We are not doing anything new; rather, we are doing what
+                everyone else does, just better. Students are able to grasp and
+                solve modern-day difficulties, break down futile societal
+                constructs, and evolve toward a sustainable future by combining
+                technology and creative problem solving.
+              </p>
+            </div>
+          </el-col>
+        </el-row>
+        <el-row :gutter="50" type="flex" class="mt-70">
+          <el-col :span="12">
+            <div>
+              <h3>We Empower</h3>
+              <p class="mt-10 text_highlight_p">
+                It is difficult to break into and excel in technology. It's even
+                more challenging if you're changing careers or don't have a
+                traditional graduate degree. Our mission is to inspire motivated
+                individuals to solve real-world problems by utilizing technology
+                to develop new solutions that address social issues.
+              </p>
+            </div>
+          </el-col>
+
+          <el-col :span="12" class="mob_mt">
+            <div class="d-flex-align-center mt-20">
+              <img
+                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
+                alt="img"
+                width="100%"
+              />
             </div>
           </el-col>
         </el-row>
@@ -232,6 +258,9 @@ export default {
     Footer,
     Apply,
     Collaborate,
+  },
+  created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
 };
 </script>

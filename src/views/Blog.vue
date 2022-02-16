@@ -3,10 +3,6 @@
     <div class="bg_callUs py-100">
       <div class="center">
         <h2 class="mt-20 white">More Journals from us</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-          officiis
-        </p>
       </div>
     </div>
     <div class="full_width bg_testimony">
@@ -64,6 +60,7 @@ export default {
   },
   created() {
     this.getBlogStories();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
   methods: {
     getBlogStories() {

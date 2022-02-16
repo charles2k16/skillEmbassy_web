@@ -59,6 +59,10 @@
                         class="d-block dd_menu mb-10"
                         >Data Science</span
                       >
+
+                      <span class="d-block dd_menu mb-10"
+                        >View All Courses</span
+                      >
                     </div>
                   </div>
                 </el-dropdown-item>
@@ -73,7 +77,9 @@
                   <span @click="$router.push('/business')">For Business</span>
                 </el-dropdown-item>
                 <el-dropdown-item>
-                  <span>Podcast </span>
+                  <span
+                    ><a href="https://anchor.fm/careers-in-tech">Podcast</a>
+                  </span>
                 </el-dropdown-item>
 
                 <el-dropdown-item divided>
@@ -108,6 +114,9 @@
                 <el-menu-item index="1-5" @click="viewCourse('data_science')"
                   >Data Science</el-menu-item
                 >
+                <el-menu-item index="1-5" @click="viewCourse('data_science')"
+                  >View All Courses</el-menu-item
+                >
               </el-submenu>
               <el-menu-item index="2" @click="$router.push('/business')"
                 >For Business</el-menu-item
@@ -118,7 +127,11 @@
               <el-menu-item index="4" @click="$router.push('/blog')"
                 >Blog</el-menu-item
               >
-              <el-menu-item index="5">Podcast</el-menu-item>
+              <el-menu-item index="5"
+                ><a href="https://anchor.fm/careers-in-tech" target="_blank"
+                  >Podcast</a
+                ></el-menu-item
+              >
             </el-menu>
           </el-col>
 

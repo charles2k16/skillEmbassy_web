@@ -263,6 +263,10 @@ a {
   font-size: 1.2rem;
   line-height: 30px;
 }
+.text_highlight_p {
+  font-size: 1.1rem;
+  line-height: 28px;
+}
 .white {
   color: rgb(240, 240, 240);
 }

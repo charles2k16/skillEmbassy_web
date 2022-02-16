@@ -18,15 +18,15 @@
       <Courses />
     </div>
 
-    <div class="full_width bg_business py-70">
+    <div class="full_width bg_business py-70 px-0">
       <HowItWorks />
     </div>
 
-    <div class="full_width bg_testimony py-70">
+    <div class="full_width bg_testimony py-70 px-0">
       <Collaborate />
     </div>
 
-    <div class="full_width bg_callUs py-100">
+    <div class="full_width bg_callUs py-100 px-0">
       <div class="center">
         <p class="callUs_p">
           We offer a wide variety of programs and courses built on adaptive
@@ -50,23 +50,26 @@
       </div>
     </div>
 
-    <div class="full_width bg_mentors">
+    <div class="full_width bg_mentors px-0">
       <OurMentors />
     </div>
 
     <div class="full_width mt-40 mb-40">
+      <h3 style="font-size: 20px" class="center">
+        Our Mentors And Instructors Work At
+      </h3>
       <OurPartners />
     </div>
 
-    <div class="full_width bg_testimony py-100">
+    <div class="full_width bg_testimony py-100 px-0">
       <Testimonies />
     </div>
 
-    <div class="full_width bg_business py-100">
+    <div class="full_width bg_business py-100 px-0">
       <ForBusiness />
     </div>
 
-    <div class="full_width bg_white py-100">
+    <div class="full_width bg_white py-100 px-0">
       <Faqs />
     </div>
 
@@ -76,7 +79,7 @@
 
     <Apply />
 
-    <div class="full-width bg_footer">
+    <div class="full-width bg_footer px-0">
       <Footer />
     </div>
   </div>
@@ -111,6 +114,9 @@ export default {
     Courses,
     Apply,
     OurPartners,
+  },
+  created() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
 };
 </script>
