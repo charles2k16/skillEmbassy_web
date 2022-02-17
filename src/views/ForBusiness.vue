@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="bg_business py-100">
+    <div class="bg_business py-100 full_width">
       <h3 class="center h_title white">How to Collaborate</h3>
       <br />
       <p class="text_highlight curr_p white center">

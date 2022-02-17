@@ -60,7 +60,9 @@
                         >Data Science</span
                       >
 
-                      <span class="d-block dd_menu mb-10"
+                      <span
+                        class="d-block dd_menu mb-10"
+                        @click="$router.push('/all_courses')"
                         >View All Courses</span
                       >
                     </div>
@@ -79,6 +81,11 @@
                 <el-dropdown-item>
                   <span
                     ><a href="https://anchor.fm/careers-in-tech">Podcast</a>
+                  </span>
+                </el-dropdown-item>
+                <el-dropdown-item>
+                  <span @click="$router.push('/all_courses')">
+                    View All Courses
                   </span>
                 </el-dropdown-item>
 
@@ -114,8 +121,8 @@
                 <el-menu-item index="1-5" @click="viewCourse('data_science')"
                   >Data Science</el-menu-item
                 >
-                <el-menu-item index="1-5" @click="viewCourse('data_science')"
-                  >View All Courses</el-menu-item
+                <el-menu-item index="1-5" @click="$router.push('/all_courses')"
+                  ><b>View All Courses</b></el-menu-item
                 >
               </el-submenu>
               <el-menu-item index="2" @click="$router.push('/business')"

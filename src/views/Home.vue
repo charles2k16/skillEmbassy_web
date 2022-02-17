@@ -18,15 +18,15 @@
       <Courses />
     </div>
 
-    <div class="full_width bg_business py-70 px-0">
+    <div class="full_width bg_business py-70">
       <HowItWorks />
     </div>
 
-    <div class="full_width bg_testimony py-70 px-0">
+    <div class="full_width bg_testimony py-70">
       <Collaborate />
     </div>
 
-    <div class="full_width bg_callUs py-100 px-0">
+    <div class="full_width bg_callUs py-100">
       <div class="center">
         <p class="callUs_p">
           We offer a wide variety of programs and courses built on adaptive
@@ -44,13 +44,17 @@
           >
         </el-button>
 
-        <el-button plain type="primary" icon="el-icon-phone" class="mob_mt">
-          JOIN A Q&A SESSION</el-button
-        >
+        <el-button plain type="primary" icon="el-icon-phone" class="mob_mt_1">
+          <a
+            href="https://lu.ma/community/com-UTIOmKYNrYHK9Fq/join"
+            target="_blank"
+            >JOIN A Q&A SESSION</a
+          >
+        </el-button>
       </div>
     </div>
 
-    <div class="full_width bg_mentors px-0">
+    <div class="full_width bg_mentors">
       <OurMentors />
     </div>
 
@@ -61,15 +65,15 @@
       <OurPartners />
     </div>
 
-    <div class="full_width bg_testimony py-100 px-0">
+    <div class="full_width bg_testimony py-100">
       <Testimonies />
     </div>
 
-    <div class="full_width bg_business py-100 px-0">
+    <div class="full_width bg_business py-100">
       <ForBusiness />
     </div>
 
-    <div class="full_width bg_white py-100 px-0">
+    <div class="full_width bg_white py-100">
       <Faqs />
     </div>
 

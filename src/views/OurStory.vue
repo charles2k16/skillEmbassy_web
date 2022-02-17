@@ -139,12 +139,12 @@
       </div>
     </div> -->
 
-    <div class="bg_story">
+    <div class="bg_story full_width">
       <div class="section_story">
         <h3 class="center h_title">Who We Are</h3>
 
         <el-row :gutter="50" type="flex" class="mt-30">
-          <el-col :span="12">
+          <el-col :span="12" class="mob_mt">
             <div>
               <h3>We Grow</h3>
               <p class="mt-10 text_highlight_p">
@@ -193,7 +193,7 @@
           </el-col>
         </el-row>
         <el-row :gutter="50" type="flex" class="mt-70">
-          <el-col :span="12">
+          <el-col :span="12" class="mob_mt">
             <div>
               <h3>We Empower</h3>
               <p class="mt-10 text_highlight_p">

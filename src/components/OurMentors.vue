@@ -2,9 +2,9 @@
   <div class="section">
     <el-row :gutter="10">
       <el-col :xs="24" :sm="24" :md="12">
-        <div class="mentors_div py-100">
+        <div class="mentors_div">
           <div>
-            <h3 class="mt-20">
+            <h3>
               Our Mentors <br />
               from Renowed Industries
             </h3>

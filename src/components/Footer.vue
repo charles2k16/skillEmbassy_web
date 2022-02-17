@@ -33,7 +33,7 @@
     <hr />
 
     <el-row :gutter="20" class="mt-40">
-      <el-col :xs="24" :sm="24" :md="5">
+      <el-col :xs="24" :sm="12" :md="5">
         <div class="footer_content">
           <h4>Contact Us</h4>
           <ul class="mt-20">
@@ -45,7 +45,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="5" class="mob_mt">
+      <el-col :xs="24" :sm="12" :md="5" class="mob_mt">
         <div class="footer_content">
           <h4>Courses</h4>
           <ul class="mt-20">
@@ -61,7 +61,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="4" class="mob_mt">
+      <el-col :xs="24" :sm="12" :md="4" class="mob_mt">
         <div class="footer_content">
           <h4>Help</h4>
           <ul class="mt-20">
@@ -72,7 +72,7 @@
           </ul>
         </div>
       </el-col>
-      <el-col :xs="24" :sm="24" :md="4" class="mob_mt">
+      <el-col :xs="24" :sm="12" :md="4" class="mob_mt">
         <div class="footer_content">
           <h4>Refund Policy</h4>
           <ul class="mt-20">
@@ -106,7 +106,7 @@
         </div>
         <div class="copyright mt-20">
           <p>Find us on Social Media</p>
-          <p class="mt-10">Copyright © skillembassy 2022</p>
+          <p class="mt-20 mob_pt">Copyright © skillembassy 2022</p>
         </div>
       </el-col>
     </el-row>

@@ -1,5 +1,104 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .full_width {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bg_secondary {
+    background: #f6f8ff;
+  }
+  .section {
+    padding: 0 10px;
+  }
+  .hero_wrapper {
+    padding: 25px 5px 20px 5px !important;
+  }
+  .mob_mt {
+    margin-top: 35px !important;
+  }
+  .mob_mt_1 {
+    margin-top: 35px !important;
+  }
+  .mob_pt {
+    padding-top: 40px !important;
+  }
+  .hiw_p {
+    width: 90% !important;
+  }
+  .whyUs_item {
+    width: 100% !important;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .callUs_p {
+    line-height: 30px;
+  }
+  .callUs_h3 {
+    line-height: 30px;
+  }
+  .mentors_img {
+    padding: 0px 0px 100px 0px !important;
+  }
+  .testimony_title {
+    margin-top: 10px !important;
+  }
+  .select_course_div {
+    margin-left: 10px !important;
+  }
+  .el-steps {
+    margin-left: 10px !important;
+  }
+  .applcn_intro_p {
+    width: 90% !important;
+  }
+  .applcn_form {
+    width: 90% !important;
+  }
+  .business_p {
+    font-size: 1.3rem !important;
+    padding: 0 10px;
+  }
+  .el-row--flex {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column-reverse !important;
+  }
+  .el-row--flex .el-col-12 {
+    width: 100%;
+  }
+  .donate_p {
+    width: 90% !important;
+  }
+  .course_page_header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .course_hd {
+    line-height: 45px;
+  }
+  .mob_90 {
+    margin: 20px auto;
+    width: 90%;
+  }
+  .section_story {
+    padding: 50px 10px !important;
+  }
+  .testimony_head {
+    text-align: center;
+  }
+}
+
+/* Extra small devices (tablets, 800px and down) */
+@media only screen and (max-width: 912px) {
+  .whyUs_ {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .full_width {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .bg_secondary {
     background: #f6f8ff;
   }
