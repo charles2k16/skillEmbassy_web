@@ -80,7 +80,9 @@
                 </el-dropdown-item>
                 <el-dropdown-item>
                   <span
-                    ><a href="https://anchor.fm/careers-in-tech">Podcast</a>
+                    ><a href="https://anchor.fm/careers-in-tech" target="_blank"
+                      >Podcast</a
+                    >
                   </span>
                 </el-dropdown-item>
                 <el-dropdown-item>
@@ -134,7 +136,7 @@
               <el-menu-item index="4" @click="$router.push('/blog')"
                 >Blog</el-menu-item
               >
-              <el-menu-item index="5"
+              <el-menu-item
                 ><a href="https://anchor.fm/careers-in-tech" target="_blank"
                   >Podcast</a
                 ></el-menu-item

@@ -288,7 +288,7 @@
             <paystack
               v-if="activeStep == 2"
               class="payment_btn"
-              :amount="amount * 100"
+              :amount="application.amount * 100"
               currency="GHS"
               :channels="['card', 'mobile_money']"
               :email="application.email"
@@ -313,7 +313,6 @@
 import paystack from 'vue-paystack';
 import Footer from '../components/Footer.vue';
 import countriesJson from '../api/countries.json';
-// import pay from '../api/pay';
 
 export default {
   name: 'Application',
@@ -330,7 +329,6 @@ export default {
   data() {
     return {
       countries: countriesJson,
-      amount: 2,
       activeCourse: '',
       activeStep: null,
       application: {
@@ -344,6 +342,7 @@ export default {
         linkedIn: '',
         about_us: '',
         stack: '',
+        amount: 3,
       },
       education: [
         'Bsc',

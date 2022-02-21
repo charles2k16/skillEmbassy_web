@@ -159,11 +159,7 @@
 
           <el-col :span="12">
             <div class="d-flex-align-center mt-20">
-              <img
-                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
-                alt="img"
-                width="100%"
-              />
+              <img src="../assets/images/grow.png" alt="img" width="100%" />
             </div>
           </el-col>
         </el-row>
@@ -171,11 +167,7 @@
         <el-row :gutter="50" type="flex" class="mt-70">
           <el-col :span="12">
             <div class="d-flex-align-center mt-20">
-              <img
-                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
-                alt="img"
-                width="100%"
-              />
+              <img src="../assets/images/innovate.png" alt="img" width="100%" />
             </div>
           </el-col>
 
@@ -192,8 +184,8 @@
             </div>
           </el-col>
         </el-row>
-        <el-row :gutter="50" type="flex" class="mt-70">
-          <el-col :span="12" class="mob_mt">
+        <el-row :gutter="50" class="mt-70">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div>
               <h3>We Empower</h3>
               <p class="mt-10 text_highlight_p">
@@ -206,13 +198,9 @@
             </div>
           </el-col>
 
-          <el-col :span="12" class="mob_mt">
+          <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
             <div class="d-flex-align-center mt-20">
-              <img
-                src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/untitled+folder/our-story.png"
-                alt="img"
-                width="100%"
-              />
+              <img src="../assets/images/empower.png" alt="img" width="100%" />
             </div>
           </el-col>
         </el-row>

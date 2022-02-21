@@ -18,7 +18,7 @@
             <el-collapse-item name="1">
               <template slot="title">
                 <img
-                  src="../assets/images/presentation.png"
+                  src="../assets/images/liveIcons/presentation.png"
                   alt="ic"
                   width="20px"
                   class="mr-1"
@@ -39,7 +39,7 @@
             <el-collapse-item name="2">
               <template slot="title">
                 <img
-                  src="../assets/images/videoconference.png"
+                  src="../assets/images/liveIcons/education.png"
                   alt="ic"
                   width="17px"
                   class="mr-1"
@@ -58,8 +58,13 @@
             </el-collapse-item>
             <el-collapse-item name="3">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Solve Real World
-                Problems
+                <img
+                  src="../assets/images/liveIcons/problem.png"
+                  alt="ic"
+                  width="17px"
+                  class="mr-1"
+                />
+                Solve Real World Problems
               </template>
               <div>
                 <p>
@@ -73,7 +78,13 @@
             </el-collapse-item>
             <el-collapse-item name="4">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Mock Interviews
+                <img
+                  src="../assets/images/liveIcons/question.png"
+                  alt="ic"
+                  width="17px"
+                  class="mr-1"
+                />
+                Mock Interviews
               </template>
               <div>
                 <p>
@@ -86,8 +97,13 @@
             </el-collapse-item>
             <el-collapse-item name="5">
               <template slot="title">
-                <i class="header-icon el-icon-info mr-1"></i> Extensive
-                Curriculum
+                <img
+                  src="../assets/images/liveIcons/open-book.png"
+                  alt="ic"
+                  width="17px"
+                  class="mr-1"
+                />
+                Extensive Curriculum
               </template>
               <div>
                 <p>

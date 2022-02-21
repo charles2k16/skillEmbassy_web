@@ -66,7 +66,11 @@
           <h4>Help</h4>
           <ul class="mt-20">
             <li @click="$router.push('/story')">About skill embassy</li>
-            <li>Podcasts</li>
+            <li>
+              <a href="https://anchor.fm/careers-in-tech" target="_blank"
+                >Podcasts</a
+              >
+            </li>
             <li>Privacy Policy</li>
             <li>Terms & Conditions</li>
           </ul>
