@@ -10,7 +10,7 @@
             </h1>
             <p class="mt-20 text_highlight">
               Learn, build and launch an impactful product with your own product
-              designer, product manager,software engineer and cloud engineer.
+              designer, product manager, software engineer and cloud engineer.
             </p>
 
             <el-button
@@ -34,7 +34,7 @@
         <el-col :xs="24" :sm="24" :md="12" class="mob_mt">
           <div class="d-flex-align-center justify-right">
             <img
-              src="https://skillembassy-website-images.s3.us-east-2.amazonaws.com/skill-embassy-head.png"
+              src="src="../../assets/images/skill-embassy-head.png"
               alt="coding school"
               width="100%"
             />
