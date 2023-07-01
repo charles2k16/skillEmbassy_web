@@ -4,7 +4,7 @@
       <el-col :xs="24" :sm="24" :md="10">
         <div class="testimony_title">
           <h2 class="testimony_head">
-            What Some <br />
+            What Our <br />
             Students Say <br />
             About <br />
             Skill Embassy
